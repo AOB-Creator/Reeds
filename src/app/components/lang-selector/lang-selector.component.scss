@@ -1,0 +1,24 @@
+#langselector{
+    display: inline;
+    #flag{
+        top: 100px;
+        left: 0px ;
+        
+    }
+    input{
+        display: none;
+    }
+    input[type='checkbox']:checked+#countries{
+        position: absolute;
+        top: 70px !important;
+        transition: .4s;
+        opacity: 1;
+    }
+    #countries{
+        position: absolute;
+        top: 200px !important;
+        z-index: 100;
+        transition: .4s;
+        opacity: 0;
+    }
+}

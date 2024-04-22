@@ -1,3 +1,9 @@
-<!-- <app-navigation></app-navigation> -->
-<router-outlet />
-<app-footer></app-footer>
+
+  @defer {
+     <app-navigation></app-navigation>
+     <router-outlet />
+     <app-footer></app-footer>
+        
+  } @placeholder (minimum 0ms) {
+    <app-loading></app-loading>
+  }

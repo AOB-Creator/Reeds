@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterLink } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -29,6 +30,15 @@ import { QuickPrevComponent } from './components/quick-prev/quick-prev.component
 import { PromoSectionComponent } from './components/promo-section/promo-section.component';
 import { ProFeaturesComponent } from './components/pro-features/pro-features.component';
 import { DesignedInfoComponent } from './components/designed-info/designed-info.component';
+import { AboutMapComponent } from './components/about-map/about-map.component';
+import { ContactWithUsComponent } from './pages/contact-with-us/contact-with-us.component';
+import { ImportantDatesComponent } from './components/important-dates/important-dates.component';
+import { BrandingCompaniesComponent } from './components/branding-companies/branding-companies.component';
+import { AboutStepsComponent } from './components/about-steps/about-steps.component';
+import { NewsAboutUsComponent } from './components/news-about-us/news-about-us.component';
+import { LoadingComponent } from './components/loading/loading.component';
+import { SharedModule } from './pages/shared/shared.module';
+import { LangSelectorComponent } from './components/lang-selector/lang-selector.component';
 
 @NgModule({
   declarations: [
@@ -59,8 +69,16 @@ import { DesignedInfoComponent } from './components/designed-info/designed-info.
     PromoSectionComponent,
     ProFeaturesComponent,
     DesignedInfoComponent,
+    AboutMapComponent,
+    ContactWithUsComponent,
+    ImportantDatesComponent,
+    BrandingCompaniesComponent,
+    AboutStepsComponent,
+    NewsAboutUsComponent,
+    LoadingComponent,
+    LangSelectorComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, SharedModule, RouterLink],
   providers: [],
   bootstrap: [AppComponent],
 })

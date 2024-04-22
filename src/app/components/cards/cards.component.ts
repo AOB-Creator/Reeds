@@ -236,6 +236,57 @@ export class CardsComponent implements OnInit {
           'https://www.schattdecor.com/media/_processed_/6/1/csm_4000311-05-000_351869d798.jpg',
         ],
       },
+      {
+        id: 16,
+        image:
+          'https://www.schattdecor.com/media/_processed_/d/8/csm_4000406-11-000_baf67ec3a9.jpg',
+        type: 'Belize',
+        number_decor: '4000406-11-000',
+        decor_type: 'Имитация камня',
+        description:
+          'Декор, который сразу завладевает вниманием зрителя. Для создания декора «Белизе» мы выбрали особенный гранит из Китая и постарались сохранить всё его очарование. Тонкая структура гранита с глубокими выразительными прожилками и типичный сего-голубой цвет создают уникальный дизайн. Всю свою силу декор обретает рядом с тёмными тонами древесины. В такой комбинации он способен стать притягательным центром всего помещения – и прежде всего, на столешнице или фартуке кухни.',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          'https://www.schattdecor.com/media/_processed_/d/8/csm_4000406-11-000_baf67ec3a9.jpg',
+          'https://www.schattdecor.com/media/user_upload/09_Dekordetailseiten/Belize/40.jpg',
+          'https://www.schattdecor.com/media/user_upload/09_Dekordetailseiten/Belize/54.jpg'
+        ],
+      },
+      {
+        id: 17,
+        image:
+          'https://www.schattdecor.com/media/_processed_/0/a/csm_4000522-01-000_00078e08ce.jpg',
+        type: 'Bergen',
+        number_decor: '4000406-11-000',
+        decor_type: 'Металл и бетон',
+        description:
+          'При создании декора «Берген» мы вдохновлялись ландшафтами одноимённого города на юго-западном побережье Норвегии. Он окружён горами и фьордами – среди них, например, Согне-фьорд, самый глубокий и длинный в стране. В декоре «Берген», как в береговой линии, тоже есть глубокие включения в структуру, задающие ритм и выразительность всему дизайну. Спокойная структура бетона грациозно сливается с красивыми мраморными прожилками. Несмотря на массивность исходного материала, общее впечатление от декора одновременно элегантное, спокойное и грубое – он идеально подойдёт для оформления ванной или кухни.',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          'https://www.schattdecor.com/media/_processed_/0/a/csm_4000522-01-000_00078e08ce.jpg',
+        ],
+      },
+      {
+        id: 18,
+        image:
+          'https://www.schattdecor.com/media/_processed_/8/4/csm_14-20032-005_f1f5a1c658.jpg',
+        type: 'Bilbao Walnut',
+        number_decor: '14-20032-005',
+        decor_type: 'Древесный декор',
+        description:
+          'Это мелкий узор, напоминающий орех, не содержащий выделяющихся деталей. Благодаря этому дизайн смотрится очень однородно и может использоваться для оформления больших участков и визуального расширения площади. Его особенностью является изогнутый широкий акцент, проходящий мягкой волной по всей поверхности декора.',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          'https://www.schattdecor.com/media/_processed_/8/4/csm_14-20032-005_f1f5a1c658.jpg',
+          'https://www.schattdecor.com/media/_processed_/9/b/csm_14-20032-006_83937b6414.jpg',
+          'https://www.schattdecor.com/media/_processed_/7/0/csm_14-20032-007_4f030101ac.jpg',
+          'https://www.schattdecor.com/media/_processed_/e/9/csm_14-20032-008_cfb45e1f6b.jpg',
+        ],
+        
+      },
     ];
   }
 }

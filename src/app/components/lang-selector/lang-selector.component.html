@@ -1,0 +1,22 @@
+<div class="" id="langselector">
+    <label id="flag" for="selectlang" class=" bg-gray-900 border border-gray-500 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block w-[70px] h-10 dark:bg-gray-900 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+      <li class="h-[40px] flex items-center justify-center">
+        <p>{{lang.toUpperCase()}}</p>
+        <div class="h-4 w-6 bg-gray-100 ml-3">
+          <img [src]="'../../../assets/images/flags/'+ lang.toUpperCase() + '.svg'" alt="flag" class="h-4 w-6 object-cover" />
+        </div>
+      </li>
+    </label>
+    <input type="checkbox" name="" id="selectlang">
+    <form class="max-w-sm mx-auto w-[200px]" id="countries">
+      <ul class="grid gap-2 grid-cols-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        <li *ngFor="let item of languageList;" class="h-[40px] flex items-center justify-center hover:bg-gray-300" (click)="changeLang(item.code)">
+          <p>{{item.code.toUpperCase()}}</p>
+          <div class="h-4 w-6 bg-gray-100 ml-3">
+            <img [src]="'../../../assets/images/flags/'+ item.code.toUpperCase() + '.svg'" alt="flag" class="h-4 w-6 object-cover" />
+          </div>
+        </li>
+      </ul>
+    </form>    
+
+</div>

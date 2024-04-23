@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterLink } from '@angular/router';
 
@@ -39,6 +39,13 @@ import { NewsAboutUsComponent } from './components/news-about-us/news-about-us.c
 import { LoadingComponent } from './components/loading/loading.component';
 import { SharedModule } from './pages/shared/shared.module';
 import { LangSelectorComponent } from './components/lang-selector/lang-selector.component';
+import { CareersComponent } from './pages/careers/careers.component';
+import { IkeaAnimationComponent } from './components/ikea-animation/ikea-animation.component';
+import { DecoorationComponent } from './pages/decooration/decooration.component';
+import { SliderDekorComponent } from './components/slider-dekor/slider-dekor.component';
+import { ProductCardComponent } from './components/product-card/product-card.component';
+import { FilterCardsComponent } from './components/filter-cards/filter-cards.component';
+import { CareerApthwayComponent } from './components/career-apthway/career-apthway.component';
 
 @NgModule({
   declarations: [
@@ -77,9 +84,17 @@ import { LangSelectorComponent } from './components/lang-selector/lang-selector.
     NewsAboutUsComponent,
     LoadingComponent,
     LangSelectorComponent,
+    CareersComponent,
+    IkeaAnimationComponent,
+    DecoorationComponent,
+    SliderDekorComponent,
+    ProductCardComponent,
+    FilterCardsComponent,
+    CareerApthwayComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, SharedModule, RouterLink],
   providers: [],
   bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule {}

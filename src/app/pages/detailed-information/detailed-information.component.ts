@@ -13,5 +13,6 @@ export class DetailedInformationComponent implements OnInit{
 
   ngOnInit(): void {
     this.scrollTopService.setScrollTopOnRouteChange();
+    this.scrollTopService.scrollToTop();
   }
 }

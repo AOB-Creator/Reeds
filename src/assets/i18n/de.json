@@ -1,0 +1,23 @@
+{
+    "all": {
+        "ssafh": "Endlich sind die Sommer-Styles da",
+        "ssafh_text": "In diesem Jahr schützt Sie unsere neue Sommerkollektion vor den rauen Elementen einer Welt, in der es egal ist, ob Sie leben oder sterben.",
+        "about_us": "Über uns"
+    },
+    "navbar": {
+        "dekor": "Dekoration",
+        "products": "Produkt",
+        "reference": "Beziehen auf",
+        "aboutus": "über uns",
+        "career": "Beruf"
+    },
+    "aboutus": {
+        "slogan": "Alle Kollegen bilden ein starkes Team mit einem gemeinsamen Ziel: Wir wollen die Holzindustrie mit hochwertigen, zeitlosen Dekoren und Oberflächen begeistern, ganz nach unserem Motto „One Source“. Unbegrenzte Lösungen."
+    },
+    "decor": {
+        "titleKitchen": "Küchendekoration mit unseren Produkten"
+    },
+    "product": {
+        "typeDecor": "Dekortyp"
+    }
+}

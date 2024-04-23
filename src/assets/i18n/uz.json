@@ -3,5 +3,21 @@
         "ssafh": "Yozgi uslublar nihoyat shu yerda",
         "ssafh_text": "Bu yil bizning yangi yozgi kolleksiyamiz sizni yashashingiz yoki o'lishingizning ahamiyati yo'q dunyoning og'ir unsurlaridan pana qiladi.",
         "about_us": "Biz haqimizda"
+    },
+    "navbar": {
+        "dekor": "Dekoratsiyalar",
+        "products": "Mahsulotlar",
+        "reference": "Malumot",
+        "aboutus": "Biz haqimizda",
+        "career": "Karyera"
+    },
+    "aboutus": {
+        "slogan": "Barcha hamkasblar yagona maqsad bilan kuchli jamoani tashkil qiladi: biz “Bir manba. Cheksiz yechimlar."
+    },
+    "decor": {
+        "titleKitchen": "Oshxonangizni bizning mahsulotlarimiz bilan bezang"
+    },
+    "product": {
+        "typeDecor": "Dekoratsiya turi"
     }
 }

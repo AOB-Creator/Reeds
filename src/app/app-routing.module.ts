@@ -6,6 +6,8 @@ import { AboutusComponent } from './pages/aboutus/aboutus.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { DetailedInformationComponent } from './pages/detailed-information/detailed-information.component';
 import { ContactWithUsComponent } from './pages/contact-with-us/contact-with-us.component';
+import { CareersComponent } from './pages/careers/careers.component';
+import { DecoorationComponent } from './pages/decooration/decooration.component';
 
 const routes: Routes = [
   {
@@ -19,8 +21,18 @@ const routes: Routes = [
     title: 'Moynak LDSP',
   },
   {
+    path: 'decoration-showroom',
+    component: DecoorationComponent,
+    children: [],
+  },
+  {
     path: 'products',
     component: ProductsComponent,
+    children: [],
+  },
+  {
+    path: 'careers-with-us',
+    component: CareersComponent,
     children: [],
   },
   {

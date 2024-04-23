@@ -3,6 +3,21 @@
         "ssafh": "Summer styles are finally here",
         "ssafh_text": "This year, our new summer collection will shelter you from the harsh elements of a world that doesn't care if you live or die.",
         "about_us": "About us"
-
+    },
+    "navbar": {
+        "dekor": "Decors",
+        "products": "Products",
+        "reference": "Reference",
+        "aboutus": "About Us",
+        "career": "Career"
+    },
+    "aboutus": {
+        "slogan": "All colleagues form a strong team with one common goal: we want to inspire the wood industry with high-quality, timeless decors and surfaces, in accordance with our motto “One Source. Unlimited Solutions."
+    },
+    "decor": {
+        "titleKitchen": "Kitchen decoration with our products"
+    },
+    "product": {
+        "typeDecor": "Decor type"
     }
 }

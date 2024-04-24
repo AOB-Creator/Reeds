@@ -4,17 +4,16 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
-
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http,
-    './assets/i18n/',
-    '.json');
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule, HttpClientModule,  TranslateModule.forRoot({
+    CommonModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
       defaultLanguage: 'en',
       loader: {
         provide: TranslateLoader,
@@ -22,8 +21,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient],
       },
     }),
-    
   ],
   exports: [TranslateModule],
 })
-export class SharedModule { }
+export class SharedModule {}

@@ -8,9 +8,12 @@ import { TranslateService } from '@ngx-translate/core';
 export class LangSelectorComponent {
   lang:string = ''
   languageList:any[] = [
-    { code: 'zh', name: 'Chinese' },
-    { code: 'da', name: 'Danish' },
     { code: 'en', name: 'English' },
+    { code: 'ru', name: 'Русский' },
+    { code: 'uz', name: "Ozbek" },
+    { code: 'qq', name: 'Qaraqalpaq' },
+    { code: 'zh', name: 'Chinese' },
+    { code: 'da', name: 'Danish' },  
     { code: 'fr', name: 'French' },
     { code: 'de', name: 'German' },
     { code: 'el', name: 'Greek' },
@@ -19,10 +22,7 @@ export class LangSelectorComponent {
     { code: 'ja', name: 'Japanese' },
     { code: 'pl', name: 'Polish' },
     { code: 'pt', name: 'Portuguese' },
-    { code: 'ru', name: 'Русский' },
-    { code: 'kz', name: "Kazakh" },
-    { code: 'uz', name: "Ozbek" },
-    { code: 'es', name: 'Spanish' },
+    { code: 'kz', name: "Kazakh" },    
     { code: 'sv', name: 'Swedish' },
     { code: 'tr', name: 'Turkish' },
     { code: 'ae', name: 'Arabic' },

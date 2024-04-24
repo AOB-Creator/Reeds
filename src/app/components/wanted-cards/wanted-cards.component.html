@@ -1,0 +1,46 @@
+<div class="bg-white">
+    <div
+      class="mx-auto max-w-2xl lg:max-w-7xl "
+    >
+    <p class="text-gray-700 text-sm mb-2"></p>
+      <div
+        class="grid grid-cols-1 gap-x-1 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-2"
+      >
+        
+        <div
+          *ngFor="let item of products; let ind = index"
+          class="group relative"
+        >
+          <div
+            class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-50"
+          >
+            <img
+              [src]="item.image"
+              alt="Front of men&#039;s Basic Tee in black."
+              class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+            />
+          </div>
+          <div class="mt-4 flex justify-between">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a routerLink="/products/detailed-info/{{ item.number_decor }}">
+                  <span class="absolute text-sm inset-0"></span>
+                  {{ item.type }}
+                </a>
+                <p class="mt-1 text-sm text-gray-500">{{ item.decor_type }}</p>
+              </h3>
+              
+                <!-- <p class="text-sm font-medium text-gray-900">
+              {{ item.where_to_use }}
+            </p> -->
+            </div>
+            <!-- <p class="text-sm font-medium text-gray-900">
+              {{ item.where_to_use }}
+            </p> -->
+          </div>
+        </div>
+  
+        <!-- More products... -->
+      </div>
+    </div>
+  </div>

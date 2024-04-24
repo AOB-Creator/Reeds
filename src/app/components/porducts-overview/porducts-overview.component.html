@@ -85,7 +85,7 @@
         class="aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 sm:overflow-hidden sm:rounded-lg"
       >
         <img
-          src="https://www.schattdecor.com/media/_processed_/e/5/csm_62_f86f7987ec.jpg"
+          [src] = imageUrl
           alt="Model wearing plain white basic tee."
           class="h-full w-full object-cover object-center"
         />
@@ -240,6 +240,7 @@
                     let item of currentProduct[0].other_images;
                     let ind = index
                   "
+                  (click)="setImage(item)"
                   class="group overflow-hidden relative flex items-center justify-center rounded-md border text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 cursor-pointer bg-white text-gray-900 shadow-sm"
                 >
                   <img [src]="item" alt="" />

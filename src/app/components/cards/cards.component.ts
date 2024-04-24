@@ -9,12 +9,19 @@ import { ProductsService } from '../../services/api-service/products.service';
 })
 export class CardsComponent implements OnInit {
   productCatalog: any[] = [];
+  numbers:number = 8
   constructor(private productService: ProductsService){}
 
   ngOnInit(): void {
     this.getData()
   }
 
+  incrementProducts(){
+    if(this.numbers<this.productCatalog.length){
+      this.numbers = this.numbers+8
+    }
+    
+  }
   getData(){
     this.productService.dataArray$.subscribe(
       {

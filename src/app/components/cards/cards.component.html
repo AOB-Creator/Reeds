@@ -10,7 +10,7 @@
       class="mt-6 grid grid-cols-1 gap-x-3 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-5"
     >
       <div
-        *ngFor="let item of productCatalog; let ind = index"
+        *ngFor="let item of productCatalog.slice(0, numbers); let ind = index"
         class="group relative"
       >
         <div
@@ -37,8 +37,13 @@
           </p>
         </div>
       </div>
-
+      
       <!-- More products... -->
+    </div>
+    <div class="block py-4 mt-2 flex items-center justify-center">
+        <button class="bg-gray-900 py-2 px-3 text-white rounded-md text-sm" (click)="incrementProducts()">
+          <span>Показать больше </span>
+        </button>
     </div>
   </div>
 </div>

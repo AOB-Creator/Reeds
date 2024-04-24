@@ -7,6 +7,10 @@ import { BehaviorSubject, Observable } from 'rxjs';
 export class ProductsService implements OnInit{
   private dataArraySubject: BehaviorSubject<any[]> = new BehaviorSubject<any[]>([]);
   public dataArray$: Observable<any[]> = this.dataArraySubject.asObservable();
+
+  private displayDataSubject: BehaviorSubject<any[]> = new BehaviorSubject<any[]>([]);
+  public displayableData$: Observable<any[]> = this.dataArraySubject.asObservable();
+
   productCatalog:any[] = []
   constructor() { 
     this.productCatalog = [
@@ -458,23 +462,295 @@ export class ProductsService implements OnInit{
           'https://www.schattdecor.com/media/_processed_/3/3/csm_14-18008-001_dc1b01e254.jpg',
         ],
       },
-
+      {
+        id: 29,
+        image:
+          'https://www.schattdecor.com/media/_processed_/6/5/csm_4000496-02-000_56b1a0b692.jpg',
+        type: 'Cali',
+        number_decor: '4000496-02-000',
+        decor_type: 'Древесный декор',
+        description:
+          'Характер декора задаётся декоративными швами, создающими вполне реалистичный 3D эффект. Отдельные элементы выглядят как положенные друг на друга плитки из древесины, вместе создающие очень интересный дизайн. Большой формат специально создан таким образом, чтобы идеально подходить для отделки стеновых панелей, а также изготовления мебели или использования в интерьере кухни',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          'https://www.schattdecor.com/media/_processed_/6/5/csm_4000496-02-000_56b1a0b692.jpg',
+          'https://www.schattdecor.com/media/_processed_/7/8/csm_4000496-03-000_212eb88ee8.jpg',
+          'https://www.schattdecor.com/media/_processed_/0/0/csm_4000496-01-000_96010fd3c2.jpg',
+        ],
+      },
+      {
+        id: 30,
+        image:
+          'https://www.schattdecor.com/media/_processed_/7/3/csm_14-12095-001_5a9006c5c0.jpg',
+        type: 'California Elm',
+        number_decor: '14-12095-001',
+        decor_type: 'Древесный декор',
+        description:
+          'Вяз Калифорния – репродукция древесины натурального ясеня. Этот исходный материал очень различается по цвету в зависимости от вида. Данный декор выделяется широким диапазоном оттенков, сбалансированным многоцветием в духе модного сейчас эффекта мозаики. Особо можно выделить окраску вытянутых срезов цветка. В целом, строение декора линейное, что выглядит элегантно и живо – но не кажется рустикальным. Вяз Калифорния может быть выполнен также с использованием перламутра, что придаст ему красивый блеск и ещё больше выделит этот дизайн.',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          'https://www.schattdecor.com/media/_processed_/7/3/csm_14-12095-001_5a9006c5c0.jpg',
+          'https://www.schattdecor.com/media/_processed_/7/5/csm_14-12095-002_45496adc7b.jpg',
+          'https://www.schattdecor.com/media/_processed_/f/c/csm_14-12095-003_d7a792a579.jpg',
+          'https://www.schattdecor.com/media/_processed_/6/9/csm_14-12095-004_977683f8a4.jpg',
+          'https://www.schattdecor.com/media/_processed_/a/9/csm_14-12095-005_f2be57ffc0.jpg',
+        ],
+      },
+      {
+        id: 31,
+        image:
+          'https://www.schattdecor.com/media/_processed_/3/3/csm_14-18008-001_dc1b01e254.jpg',
+        type: 'Calgary',
+        number_decor: '14-18008-001',
+        decor_type: 'Древесный декор',
+        description:
+          'Стильный и всегда актуальный, этот декор с его дубовыми ламелями, мягкими тенями и подчёркнутыми заглублёнными участками словно излучает с поверхностей мебели благородство и уют. Мы стремились добиться максимальной натуральности его линий. Данная тема также актуальна для отделочных материалов.',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          'https://www.schattdecor.com/media/_processed_/3/3/csm_14-18008-001_dc1b01e254.jpg',
+          'https://www.schattdecor.com/media/_processed_/7/f/csm_14-18008-002_d51b7753e8.jpg',
+          'https://www.schattdecor.com/media/_processed_/3/3/csm_14-18008-001_dc1b01e254.jpg',
+          'https://www.schattdecor.com/media/_processed_/3/3/csm_14-18008-001_dc1b01e254.jpg',
+          'https://www.schattdecor.com/media/_processed_/3/3/csm_14-18008-001_dc1b01e254.jpg',
+        ],
+      },
+      {
+        id: 32,
+        image:
+          'https://www.schattdecor.com/media/_processed_/1/e/csm_4000521-01-000_4c4c422764.jpg',
+        type: 'Callisto',
+        number_decor: '4000521-01-000',
+        decor_type: 'Древесный декор',
+        description:
+          'Слово Callisto происходит от древнегреческого и означает «самый или самая красивая». Декор впечатляет своей предельной натуральностью и благодаря делению на тонкие планки излучает элегантность эллинистической эпохи. Он прекрасно подходит для оформления фасадов мебели, комодов или небольших предметов обстановки, придавая элегантность всему интерьеру. Небольшие фрагменты рифлёных стеновых панелей способны придать помещению сдержанность, структурированность и изящно разделить пространство. Таким образом достигается органичная планировка помещения.',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          'https://www.schattdecor.com/media/_processed_/1/e/csm_4000521-01-000_4c4c422764.jpg',
+        ],
+      },
+      {
+        id: 33,
+        image:
+          'https://www.schattdecor.com/media/_processed_/9/6/csm_4000244-08-000_f3faac9df9.jpg',
+        type: 'Batik',
+        number_decor: '4000244-08-000',
+        decor_type: 'Плитка',
+        description:
+          'Этот дизайн объединяет в себе художественный контраст графических элементов и состаренной плитки. Многообразие рисунков позволяет при внимательном рассмотрении каждый раз открывать что-то новое. Не имеет значения где: на кухонном фартуке, на столешнице или на столе. Сочетание с каким-либо древесным декором особенно подчеркнёт уникальность декора.',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          'https://www.schattdecor.com/media/_processed_/9/6/csm_4000244-08-000_f3faac9df9.jpg',
+        ],
+      },
+      {
+        id: 34,
+        image:
+          'https://www.schattdecor.com/media/_processed_/2/a/csm_4000502-01-000_17f39c49bf.jpg',
+        type: 'Fez',
+        number_decor: '4000502-01-000',
+        decor_type: 'Плитка',
+        description:
+          'Кто хоть раз прогуливался по улицам марокканского города Фес, наверняка помнит аромат восточных пряностей, повседневную суету старой медины и удивительно красивые парадные. Декор «Fez» является образцом традиционного марокканского ремесленного искусства, расставляя тем самым прекрасные цветовые акценты в интерьере.',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          'https://www.schattdecor.com/media/_processed_/2/a/csm_4000502-01-000_17f39c49bf.jpg',
+        ],
+      },
+      {
+        id: 35,
+        image:
+          'https://www.schattdecor.com/media/_processed_/2/8/csm_4000503-01-000_2e49829876.jpg',
+        type: 'Kallima',
+        number_decor: '4000503-01-000',
+        decor_type: 'Плитка',
+        description:
+          'Дизайн Kallima представляет собой мозаику из плитки, которая словно переносит в медину Марокко. Мелкие разноцветные плитки ручной работы выложены вокруг общего центра в форме звезды. Игра цвета между плитками и контрастный шов придают декору особо ощутимую трёхмерность.',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          'https://www.schattdecor.com/media/_processed_/2/8/csm_4000503-01-000_2e49829876.jpg',
+        ],
+      },
+      {
+        id: 36,
+        image:
+          'https://www.schattdecor.com/media/_processed_/7/1/csm_4000330-21-000_7cf50fe046.jpg',
+        type: 'Cristallo Mix',
+        number_decor: '4000330-21-000',
+        decor_type: 'Сочетание материалов',
+        description:
+          'В импозантную имитацию камня под названием «Кристалло» врывается древесная структура – в результате возникает декор с большим раппортом, демонстрирующий наблюдателю все грани красоты природы. Основой для этой разработки стали имитация мрамора «Кристалло» и декор глубокой печати «Вяз Китами». Данный дизайн выглядит очень убедительно благодаря естественности линий и чёткой структуре.',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          'https://www.schattdecor.com/media/_processed_/7/1/csm_4000330-21-000_7cf50fe046.jpg',
+        ],
+      },
+      {
+        id: 37,
+        image:
+          'https://www.schattdecor.com/media/_processed_/7/1/csm_4000393-11-000_e71dcb0be6.jpg',
+        type: 'Globe',
+        number_decor: '4000393-11-000',
+        decor_type: 'Сочетание материалов',
+        description:
+          'Комбинация из различных фрагментов камня, лёгкая и спокойная. Декор «Глоуб» отображает всё разнообразие природы. Здесь современные элементы с естественной структурой собраны в единую композицию. Имитации натурального камня остаются высоко актуальным элементом оформления интерьеров во все времена.',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          'https://www.schattdecor.com/media/_processed_/7/1/csm_4000393-11-000_e71dcb0be6.jpg',
+        ],
+      },
+      {
+        id: 38,
+        image:
+          'https://www.schattdecor.com/media/_processed_/7/0/csm_4000296-17-000_f315a2ddd5.jpg',
+        type: 'Helsinki',
+        number_decor: '4000296-17-000',
+        decor_type: 'Сочетание материалов',
+        description:
+          'Декор «Хельсинки» представляет собой новую и современную интерпретацию тренда «шеврон». Благодаря сочетанию классического древесного декора и различной графики возникает впечатляющая и необычная композиция, излучающая, тем не менее, определённую чёткость и лёгкость. Так же, как и город Хельсинки.',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          'https://www.schattdecor.com/media/_processed_/7/0/csm_4000296-17-000_f315a2ddd5.jpg',
+        ],
+      },
+      {
+        id: 39,
+        image:
+          'https://www.schattdecor.com/media/_processed_/5/1/csm_4000297-04-000_fb8ad1b33d.jpg',
+        type: 'Origami',
+        number_decor: '4000297-04-000',
+        decor_type: 'Сочетание материалов',
+        description:
+          'Декор «Оригами» передаёт особое чувство материальности. Классические древесные и бетонные текстуры скомбинированы из трёх различных декоров по-новому. Такое произвольное сочетание материалов универсально в применении и вызывает большой интерес за счёт неоднородности элементов.',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          'https://www.schattdecor.com/media/_processed_/5/1/csm_4000297-04-000_fb8ad1b33d.jpg',
+        ],
+      },
+      {
+        id: 40,
+        image:
+          'https://www.schattdecor.com/media/_processed_/a/c/csm_30005-L179832_d430634716.jpg',
+        type: 'Samos',
+        number_decor: '30005-l179832',
+        decor_type: 'Сочетание материалов',
+        description:
+          'Декор Самос создавался для крупных декоративных панелей. Он представляет собой сочетание фрагментов мрамора каррара и паркетных планок, расположенных по диагонали в форме рисунка "ёлочка". В результате необычной комбинации хорошо известных, традиционных материалов возникает очень современный, привлекающий внимание декор.',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          'https://www.schattdecor.com/media/_processed_/a/c/csm_30005-L179832_d430634716.jpg',
+          'https://www.schattdecor.com/media/_processed_/d/1/csm_30005-L179941_5f5cd85b5f.jpg',
+          'https://www.schattdecor.com/media/_processed_/1/8/csm_30005-L179943_1f68704fc0.jpg',
+        ],
+      },
+      {
+        id: 41,
+        image:
+          'https://www.schattdecor.com/media/_processed_/d/3/csm_14-26099-010_d7b2764d0d.jpg',
+        type: 'Лофтвуд',
+        number_decor: '14-26099-010',
+        decor_type: 'Сочетание материалов',
+        description:
+          'Свежая интерпретация под названием «Лофтвуд» — ответ от наших дизайнеров на новый тренд: спрос на поверхности, напоминающие грубый бетон. Вместе с этим востребовано и сочетание разных материалов. Результат смешивания: декор, поверхность которого словно чувствуется при прикосновении к нему. Тонкие трещины являются свидетельством присутствия цемента и шпателя. Сфера использования декора довольна обширна, безусловно, он будет хорошо смотреться и в современных кухнях.',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          'https://www.schattdecor.com/media/_processed_/d/3/csm_14-26099-010_d7b2764d0d.jpg',
+          'https://www.schattdecor.com/media/_processed_/6/1/csm_14-26099-001_36cd67a63b.jpg',
+          'https://www.schattdecor.com/media/_processed_/d/2/csm_14-26099-003_b7a2e6ed5c.jpg',
+          'https://www.schattdecor.com/media/_processed_/c/c/csm_14-26099-004_4529a31113.jpg',
+        ],
+      },
+      {
+        id: 42,
+        image:
+          'https://www.schattdecor.com/media/_processed_/d/0/csm_30004-L173091_6caf75cabe.jpg',
+        type: 'Магдалена',
+        number_decor: '30004-l173091',
+        decor_type: 'Сочетание материалов',
+        description:
+          'Новый декор под названием Madalena представляет собой симбиоз двух разных текстур, прекрасно подходящий для корпусной мебели и оформления столешниц. Фрагменты поперечных срезов ствола дерева и участки каменной текстуры дополняют друг друга довольно необычным образом. Возникает современный планочный декор с широкими полосами материала.',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          'https://www.schattdecor.com/media/_processed_/d/0/csm_30004-L173091_6caf75cabe.jpg',
+          'https://www.schattdecor.com/media/_processed_/a/3/csm_30004-L174084_3641309237.jpg',
+          'https://www.schattdecor.com/media/_processed_/0/d/csm_30004-L174143_bf06f5c33f.jpg',
+        ],
+      },
+      {
+        id: 43,
+        image:
+          'https://www.schattdecor.com/media/_processed_/c/6/csm_14-26081-001_fbc449f9be.jpg',
+        type: 'Неаполис',
+        number_decor: '14-26081-001',
+        decor_type: 'Сочетание материалов',
+        description:
+          'Очень гармоничная комбинация графических элементов и классической текстуры дуба — основа декора Неаполис. Этот напольный декор со сплошным рисунком подойдёт и для мебельных поверхностей, если Вам нужно создать особо рустикальную атмосферу',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          'https://www.schattdecor.com/media/_processed_/c/6/csm_14-26081-001_fbc449f9be.jpg',
+          'https://www.schattdecor.com/media/_processed_/b/2/csm_14-26081-002_af13036086.jpg',
+          'https://www.schattdecor.com/media/_processed_/d/8/csm_14-26081-003_e4aa4cb63b.jpg',
+          'https://www.schattdecor.com/media/_processed_/e/3/csm_14-26081-010_76b371072b.jpg',
+          'https://www.schattdecor.com/media/_processed_/9/a/csm_14-26081-004_b90af708cc.jpg'
+        ],
+      },
+      {
+        id: 44,
+        image:
+          'https://www.schattdecor.com/media/_processed_/3/d/csm_30030-L187611_195b57fdab.jpg',
+        type: 'Стилвуд Шеврон',
+        number_decor: '30030-l187611',
+        decor_type: 'Сочетание материалов',
+        description:
+          'Созданный на основе французского наборного паркета, данный напольный декор уже необычен самим выбором материала. Солидный дуб совмещён с массивными стальными планками. Неравномерность расположения обеих текстур создаёт удивительную, очень современную и весьма декоративную имитацию паркета',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          'https://www.schattdecor.com/media/_processed_/3/d/csm_30030-L187611_195b57fdab.jpg',
+          'https://www.schattdecor.com/media/_processed_/e/4/csm_30030-L187613_3315ae3194.jpg',
+          'https://www.schattdecor.com/media/_processed_/5/6/csm_30030-L188013_abb30157a8.jpg',
+          'https://www.schattdecor.com/media/_processed_/f/c/csm_30030-L188014_3fe11aa201.jpg',
+          'https://www.schattdecor.com/media/_processed_/9/4/csm_30030-L188015_28c70a8a69.jpg'
+        ],
+      },
     ];
     this.dataArraySubject.next(this.productCatalog);  
+    this.displayDataSubject.next(this.productCatalog);
   }
   ngOnInit(): void {
        
   }
   
-
   setDataArray(dataArray: any[]): void {
     this.dataArraySubject.next(dataArray);
   }
-
   addData(data: any): void {
     const currentData = this.dataArraySubject.getValue();
     this.dataArraySubject.next([...currentData, data]);
   }
+  setDisplayData(dataArray:any):void{
+    this.displayDataSubject.next(dataArray)
+  }
+  addDisplayData(data: any): void {
+    const currentData = this.displayDataSubject.getValue();
+    this.displayDataSubject.next([...currentData, data]);
+  }
+
+  
 
   
 

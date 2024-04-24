@@ -46,6 +46,8 @@ import { SliderDekorComponent } from './components/slider-dekor/slider-dekor.com
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { FilterCardsComponent } from './components/filter-cards/filter-cards.component';
 import { CareerApthwayComponent } from './components/career-apthway/career-apthway.component';
+import { WantedCardsComponent } from './components/wanted-cards/wanted-cards.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -91,6 +93,8 @@ import { CareerApthwayComponent } from './components/career-apthway/career-apthw
     ProductCardComponent,
     FilterCardsComponent,
     CareerApthwayComponent,
+    WantedCardsComponent,
+    GalleryComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, SharedModule, RouterLink],
   providers: [],

@@ -79,7 +79,7 @@
                 <h3 class="-mx-2 -my-3 flow-root">
                   <!-- Expand/collapse section button -->
                   <button type="button" class="flex w-full items-center justify-between bg-white px-2 py-3 text-gray-400 hover:text-gray-500" aria-controls="filter-section-mobile-0" aria-expanded="false">
-                    <span class="font-medium text-gray-900">{{'product.typeDecor' | translate}}2</span>
+                    <span class="font-medium text-gray-900">{{'product.typeDecor' | translate}} </span>
                     <span class="ml-6 flex items-center">
                       <!-- Expand icon, show/hide based on section open state. -->
                       <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -94,124 +94,39 @@
                 </h3>
                 <!-- Filter section, show/hide based on section state. -->
                 <div class="pt-6" id="filter-section-mobile-0">
-                  <div class="space-y-6">
+                  <div class="space-y-4">
                     <div class="flex items-center">
-                      <input id="filter-mobile-color-0" name="color[]" value="white" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
-                      <label for="filter-mobile-color-0" class="ml-3 min-w-0 flex-1 text-gray-500">White</label>
+                      <input (change)="selectCategory('all')" [checked]="existanceCheck('all')" id="filter-color-0" name="color[]" value="white" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <label for="filter-color-0" class="ml-3 text-sm text-gray-600">All</label>
                     </div>
                     <div class="flex items-center">
-                      <input id="filter-mobile-color-1" name="color[]" value="beige" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
-                      <label for="filter-mobile-color-1" class="ml-3 min-w-0 flex-1 text-gray-500">Beige</label>
+                      <input (change)="selectCategory('treedekor')" [checked]="existanceCheck('treedekor')" id="filter-color-1" name="color[]" value="beige" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <label for="filter-color-1" class="ml-3 text-sm text-gray-600">Древесный декор</label>
                     </div>
                     <div class="flex items-center">
-                      <input id="filter-mobile-color-2" name="color[]" value="blue" type="checkbox" checked class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
-                      <label for="filter-mobile-color-2" class="ml-3 min-w-0 flex-1 text-gray-500">Blue</label>
+                      <input (change)="selectCategory('stonedecor')" [checked]="existanceCheck('stonedecor')" id="filter-color-2" name="color[]" value="blue" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <label for="filter-color-2" class="ml-3 text-sm text-gray-600">Имитация камня</label>
                     </div>
                     <div class="flex items-center">
-                      <input id="filter-mobile-color-3" name="color[]" value="brown" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
-                      <label for="filter-mobile-color-3" class="ml-3 min-w-0 flex-1 text-gray-500">Brown</label>
+                      <input (change)="selectCategory('combination')" [checked]="existanceCheck('combination')" id="filter-color-3" name="color[]" value="brown" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <label for="filter-color-3" class="ml-3 text-sm text-gray-600">Сочетание материалов</label>
                     </div>
                     <div class="flex items-center">
-                      <input id="filter-mobile-color-4" name="color[]" value="green" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
-                      <label for="filter-mobile-color-4" class="ml-3 min-w-0 flex-1 text-gray-500">Green</label>
+                      <input (change)="selectCategory('graphy')" [checked]="existanceCheck('graphy')" id="filter-color-4" name="color[]" value="green" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <label for="filter-color-4" class="ml-3 text-sm text-gray-600">Графика и структуры</label>
                     </div>
                     <div class="flex items-center">
-                      <input id="filter-mobile-color-5" name="color[]" value="purple" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
-                      <label for="filter-mobile-color-5" class="ml-3 min-w-0 flex-1 text-gray-500">Purple</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="border-t border-gray-200 px-4 py-6">
-                <h3 class="-mx-2 -my-3 flow-root">
-                  <!-- Expand/collapse section button -->
-                  <button type="button" class="flex w-full items-center justify-between bg-white px-2 py-3 text-gray-400 hover:text-gray-500" aria-controls="filter-section-mobile-1" aria-expanded="false">
-                    <span class="font-medium text-gray-900">Category</span>
-                    <span class="ml-6 flex items-center">
-                      <!-- Expand icon, show/hide based on section open state. -->
-                      <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z" />
-                      </svg>
-                      <!-- Collapse icon, show/hide based on section open state. -->
-                      <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z" clip-rule="evenodd" />
-                      </svg>
-                    </span>
-                  </button>
-                </h3>
-                <!-- Filter section, show/hide based on section state. -->
-                <div class="pt-6" id="filter-section-mobile-1">
-                  <div class="space-y-6">
-                    <div class="flex items-center">
-                      <input id="filter-mobile-category-0" name="category[]" value="new-arrivals" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
-                      <label for="filter-mobile-category-0" class="ml-3 min-w-0 flex-1 text-gray-500">New Arrivals</label>
+                      <input (change)="selectCategory('metal')" [checked]="existanceCheck('metal')" id="filter-color-5" name="color[]" value="purple" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <label for="filter-color-5" class="ml-3 text-sm text-gray-600">Металл и бетон</label>
                     </div>
                     <div class="flex items-center">
-                      <input id="filter-mobile-category-1" name="category[]" value="sale" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
-                      <label for="filter-mobile-category-1" class="ml-3 min-w-0 flex-1 text-gray-500">Sale</label>
-                    </div>
-                    <div class="flex items-center">
-                      <input id="filter-mobile-category-2" name="category[]" value="travel" type="checkbox" checked class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
-                      <label for="filter-mobile-category-2" class="ml-3 min-w-0 flex-1 text-gray-500">Travel</label>
-                    </div>
-                    <div class="flex items-center">
-                      <input id="filter-mobile-category-3" name="category[]" value="organization" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
-                      <label for="filter-mobile-category-3" class="ml-3 min-w-0 flex-1 text-gray-500">Organization</label>
-                    </div>
-                    <div class="flex items-center">
-                      <input id="filter-mobile-category-4" name="category[]" value="accessories" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
-                      <label for="filter-mobile-category-4" class="ml-3 min-w-0 flex-1 text-gray-500">Accessories</label>
+                      <input (change)="selectCategory('plate')" [checked]="existanceCheck('plate')" id="filter-color-5" name="color[]" value="purple" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <label for="filter-color-5" class="ml-3 text-sm text-gray-600">Плитка</label>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="border-t border-gray-200 px-4 py-6">
-                <h3 class="-mx-2 -my-3 flow-root">
-                  <!-- Expand/collapse section button -->
-                  <button type="button" class="flex w-full items-center justify-between bg-white px-2 py-3 text-gray-400 hover:text-gray-500" aria-controls="filter-section-mobile-2" aria-expanded="false">
-                    <span class="font-medium text-gray-900">Size</span>
-                    <span class="ml-6 flex items-center">
-                      <!-- Expand icon, show/hide based on section open state. -->
-                      <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z" />
-                      </svg>
-                      <!-- Collapse icon, show/hide based on section open state. -->
-                      <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M4 10a.75.75 0 01.75-.75h10.5a.75.75 0 010 1.5H4.75A.75.75 0 014 10z" clip-rule="evenodd" />
-                      </svg>
-                    </span>
-                  </button>
-                </h3>
-                <!-- Filter section, show/hide based on section state. -->
-                <div class="pt-6" id="filter-section-mobile-2">
-                  <div class="space-y-6">
-                    <div class="flex items-center">
-                      <input id="filter-mobile-size-0" name="size[]" value="2l" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
-                      <label for="filter-mobile-size-0" class="ml-3 min-w-0 flex-1 text-gray-500">2L</label>
-                    </div>
-                    <div class="flex items-center">
-                      <input id="filter-mobile-size-1" name="size[]" value="6l" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
-                      <label for="filter-mobile-size-1" class="ml-3 min-w-0 flex-1 text-gray-500">6L</label>
-                    </div>
-                    <div class="flex items-center">
-                      <input id="filter-mobile-size-2" name="size[]" value="12l" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
-                      <label for="filter-mobile-size-2" class="ml-3 min-w-0 flex-1 text-gray-500">12L</label>
-                    </div>
-                    <div class="flex items-center">
-                      <input id="filter-mobile-size-3" name="size[]" value="18l" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
-                      <label for="filter-mobile-size-3" class="ml-3 min-w-0 flex-1 text-gray-500">18L</label>
-                    </div>
-                    <div class="flex items-center">
-                      <input id="filter-mobile-size-4" name="size[]" value="20l" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
-                      <label for="filter-mobile-size-4" class="ml-3 min-w-0 flex-1 text-gray-500">20L</label>
-                    </div>
-                    <div class="flex items-center">
-                      <input id="filter-mobile-size-5" name="size[]" value="40l" type="checkbox" checked class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
-                      <label for="filter-mobile-size-5" class="ml-3 min-w-0 flex-1 text-gray-500">40L</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            
             </form>
           </div>
         </div>
@@ -219,7 +134,7 @@
   
       <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-24">
-          <h1 class="text-4xl font-bold tracking-tight text-gray-900">New Arrivals</h1>
+          <h1 class="text-4xl font-bold tracking-tight text-gray-900">Categories</h1>
   
           <div class="flex items-center">
             <div class="relative inline-block text-left">
@@ -232,16 +147,7 @@
                 </button>
               </div>
               
-              <!--
-                Dropdown menu, show/hide based on menu state.
-  
-                Entering: "transition ease-out duration-100"
-                  From: "transform opacity-0 scale-95"
-                  To: "transform opacity-100 scale-100"
-                Leaving: "transition ease-in duration-75"
-                  From: "transform opacity-100 scale-100"
-                  To: "transform opacity-0 scale-95"
-              -->
+             
               <div class="sr-only absolute right-0 z-10 mt-2 w-40 origin-top-right rounded-md bg-white shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                 <div class="py-1 " role="none">
                   <!--
@@ -275,7 +181,7 @@
   
         <section aria-labelledby="products-heading" class="pb-24 pt-6">
           <h2 id="products-heading" class="sr-only">Products</h2>
-          <div class="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
+          <div class="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4 " >
             <!-- Filters -->
             <form class="hidden lg:block">
               <h3 class="sr-only">Categories</h3>
@@ -292,8 +198,9 @@
                 <li>
                   <a href="#">Hip Bags</a>
                 </li>
-                <li>
-                  <a href="#">Laptop Sleeves</a>
+                <li class="flex items-center justify-between">
+                  <a href="#">Доступно вариантов</a>
+                  <span>{{displayData.length}}</span>
                 </li>
               </ul>
   
@@ -318,33 +225,33 @@
                 <div class="pt-6" id="filter-section-0">
                   <div class="space-y-4">
                     <div class="flex items-center">
-                      <input checked id="filter-color-0" name="color[]" value="white" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <input (change)="selectCategory('all')" [checked]="existanceCheck('all')" id="filter-color-0" name="color[]" value="white" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
                       <label for="filter-color-0" class="ml-3 text-sm text-gray-600">All</label>
                     </div>
                     <div class="flex items-center">
-                      <input id="filter-color-1" name="color[]" value="beige" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <input (change)="selectCategory('treedekor')" [checked]="existanceCheck('treedekor')" id="filter-color-1" name="color[]" value="beige" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
                       <label for="filter-color-1" class="ml-3 text-sm text-gray-600">Древесный декор</label>
                     </div>
                     <div class="flex items-center">
-                      <input id="filter-color-2" name="color[]" value="blue" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <input (change)="selectCategory('stonedecor')" [checked]="existanceCheck('stonedecor')" id="filter-color-2" name="color[]" value="blue" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
                       <label for="filter-color-2" class="ml-3 text-sm text-gray-600">Имитация камня</label>
                     </div>
                     <div class="flex items-center">
-                      <input id="filter-color-3" name="color[]" value="brown" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <input (change)="selectCategory('combination')" [checked]="existanceCheck('combination')" id="filter-color-3" name="color[]" value="brown" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
                       <label for="filter-color-3" class="ml-3 text-sm text-gray-600">Сочетание материалов</label>
                     </div>
                     <div class="flex items-center">
-                      <input id="filter-color-4" name="color[]" value="green" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <input (change)="selectCategory('graphy')" [checked]="existanceCheck('graphy')" id="filter-color-4" name="color[]" value="green" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
                       <label for="filter-color-4" class="ml-3 text-sm text-gray-600">Графика и структуры</label>
                     </div>
                     <div class="flex items-center">
-                      <input id="filter-color-5" name="color[]" value="purple" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <input (change)="selectCategory('metal')" [checked]="existanceCheck('metal')" id="filter-color-5" name="color[]" value="purple" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
                       <label for="filter-color-5" class="ml-3 text-sm text-gray-600">Металл и бетон</label>
                     </div>
                     <div class="flex items-center">
-                        <input id="filter-color-5" name="color[]" value="purple" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
-                        <label for="filter-color-5" class="ml-3 text-sm text-gray-600">Плитка</label>
-                      </div>
+                      <input (change)="selectCategory('plate')" [checked]="existanceCheck('plate')" id="filter-color-6" name="color[]" value="purple" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <label for="filter-color-6" class="ml-3 text-sm text-gray-600">Плитка</label>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -394,9 +301,9 @@
             </form>
   
             <!-- Product grid -->
-            <div class="h-[80vh] lg:col-span-3 bg-gray-100">
-              <!-- Your content -->
-              <!-- <app-cards></app-cards> -->
+            <div class="h-[80vh] lg:col-span-3 overflow-y-scroll">
+              <app-wanted-cards [products]="displayData"></app-wanted-cards>
+            
             </div>
           </div>
         </section>

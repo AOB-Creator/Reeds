@@ -16,13 +16,13 @@ export class SliderDekorComponent implements OnInit{
         types: [
          {
           image: "https://www.schattdecor.com/media/_processed_/c/b/csm_4000398-07-000_5fd0a651fc.jpg",
-          id: "4000531-01-000",
-          type_decor: "Belize"
+          id: "4000398-07-000",
+          type_decor: "Fern"
          },
          {
-          image: "https://www.schattdecor.com/media/_processed_/e/5/csm_14-54152-001_613211a36a.jpg",
-          id: "4000531-01-000",
-          type_decor: "Barcelona"
+          image: "https://www.schattdecor.com/media/_processed_/5/7/csm_14-11069-001_875e51af19.jpg",
+          id: "14-11069-001",
+          type_decor: "Brighton"
          }
         ]
       },
@@ -30,20 +30,22 @@ export class SliderDekorComponent implements OnInit{
         id: 2,
         types: [
           {
-           image: "https://www.schattdecor.com/media/_processed_/e/e/csm_14-54191-001_183ef7ecce.jpg",
-           id: "4000531-01-000",
-           type_decor: "Borneo Mango"
+            image: "https://www.schattdecor.com/media/_processed_/f/5/csm_14-54246-001_3a51486edb.jpg",
+            id: "14-54246-001",
+            type_decor: "Atlantic Coast"
           },
           {
-           image: "https://www.schattdecor.com/media/_processed_/e/5/csm_14-54152-001_613211a36a.jpg",
-           id: "4000531-01-000",
-           type_decor: "Barcelona"
+            image: "https://www.schattdecor.com/media/_processed_/e/5/csm_14-54152-001_613211a36a.jpg",
+            id: "4000531-01-000",
+            type_decor: "Barcelona"
           },
           {
-           image: "https://www.schattdecor.com/media/_processed_/6/2/csm_14-24057-001_44272e863e.jpg",
-           id: "14-24057-004",
-           type_decor: "Adalar"
+           image: "https://www.schattdecor.com/media/_processed_/5/7/csm_14-11069-001_875e51af19.jpg",
+           id: "14-11069-001",
+           type_decor: "Brighton"
           },
+         
+          
          ]
       },
       {

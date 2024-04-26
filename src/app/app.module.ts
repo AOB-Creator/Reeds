@@ -48,6 +48,7 @@ import { FilterCardsComponent } from './components/filter-cards/filter-cards.com
 import { CareerApthwayComponent } from './components/career-apthway/career-apthway.component';
 import { WantedCardsComponent } from './components/wanted-cards/wanted-cards.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { NgxImageZoomModule } from 'ngx-image-zoom';
 
 @NgModule({
   declarations: [
@@ -96,7 +97,7 @@ import { GalleryComponent } from './components/gallery/gallery.component';
     WantedCardsComponent,
     GalleryComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, SharedModule, RouterLink],
+  imports: [BrowserModule, AppRoutingModule, SharedModule, RouterLink, NgxImageZoomModule,],
   providers: [],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

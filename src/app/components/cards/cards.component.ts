@@ -14,6 +14,7 @@ export class CardsComponent implements OnInit {
 
   ngOnInit(): void {
     this.getData()
+    
   }
 
   incrementProducts(){

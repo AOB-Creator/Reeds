@@ -79,6 +79,15 @@
             alt="Model wearing plain gray basic tee."
             class="h-full w-full object-cover object-center"
           />
+          <lib-ngx-image-zoom
+            [thumbImage]=myThumbnail
+            [fullImage]=myFullresImage
+            [magnification]="2"
+            [enableScrollZoom]="true"
+            [enableLens]="true"
+            [lensWidth]="200"
+            [lensHeight]="200"
+        ></lib-ngx-image-zoom>
         </div>
       </div>
       <div
@@ -106,7 +115,7 @@
       <div class="mt-4 lg:row-span-3 lg:mt-0">
         <h2 class="sr-only">Product information</h2>
         <p class="text-2xl tracking-tight text-gray-900">
-          Номер декора: 14-01056-004
+          Номер декора: {{ currentProduct[0].number_decor }}
         </p>
 
         <!-- Reviews -->
@@ -303,6 +312,7 @@
             </ul>
           </div>
         </div>
+        
 
         <div class="mt-10">
           <h2 class="text-sm font-medium text-gray-900">Details</h2>
@@ -314,6 +324,15 @@
               to get new, exciting colors, like our upcoming &quot;Charcoal
               Gray&quot; limited release.
             </p>
+            <lib-ngx-image-zoom
+            [thumbImage]=myThumbnail
+            [fullImage]=myFullresImage
+            [magnification]="2"
+            [enableScrollZoom]="true"
+            [enableLens]="true"
+            [lensWidth]="200"
+            [lensHeight]="200"
+        ></lib-ngx-image-zoom>
           </div>
         </div>
       </div>

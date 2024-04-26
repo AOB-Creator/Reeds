@@ -1,4 +1,4 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, EventEmitter, OnChanges, OnInit, Output, SimpleChanges, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductsService } from '../../services/api-service/products.service';
 @Component({
@@ -6,32 +6,36 @@ import { ProductsService } from '../../services/api-service/products.service';
   templateUrl: './porducts-overview.component.html',
   styleUrl: './porducts-overview.component.scss',
 })
-export class PorductsOverviewComponent implements OnInit {
+export class PorductsOverviewComponent implements OnInit{
   number_decor: string = '';
   prodService = inject(ProductsService)
   product_list: any[] = [];
   currentProduct: Employee[] = [];
 
   imageUrl:string = 'https://www.schattdecor.com/media/_processed_/e/5/csm_62_f86f7987ec.jpg'
-
+  myThumbnail = this.imageUrl
+  myFullresImage:any = 'https://www.schattdecor.com/media/_processed_/e/5/csm_62_f86f7987ec.jpg'
   constructor(private route: ActivatedRoute) {}
 
-  ngOnInit(): void {
+  @Output() typeGroup = new EventEmitter<string>()
 
+  ngOnInit(): void {
+    this.myThumbnail='https://www.schattdecor.com/media/_processed_/3/0/csm_Produktinnovationen_Symbiose2_9699ae315d.jpg'
     this.route.params.subscribe((params) => {
       const id = params['id'];
-      this.number_decor = id;
-      console.log('Route parameter:', id);
+      this.number_decor = id;      
     });
     this.getData()
-
-    this.magnify('image1', 1.5)
-
     this.currentProduct = this.CurrentItem(
       this.product_list,
       this.number_decor
-    );
-    
+    ); 
+  }
+
+ 
+
+  FindDataType(str:string){
+    this.typeGroup.emit(str)
   }
 
 
@@ -57,12 +61,15 @@ export class PorductsOverviewComponent implements OnInit {
   }
 
   CurrentItem(data: Employee[], number_id: string): Employee[] {
+    
     return data.filter((item: any, ind: number) => {
       if (item.number_decor == number_id) {
+        this.FindDataType(item.decor_type)
         console.log(item);
         return item;
       }
     });
+    
   }
 
   

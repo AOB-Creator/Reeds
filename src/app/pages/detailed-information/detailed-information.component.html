@@ -1,2 +1,2 @@
-<app-porducts-overview></app-porducts-overview>
-<app-product-lists></app-product-lists>
+<app-porducts-overview (typeGroup)="whatType($event)"></app-porducts-overview>
+<app-product-lists [text]="$typeProduct"></app-product-lists>

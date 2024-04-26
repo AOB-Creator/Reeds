@@ -398,19 +398,19 @@ export class ProductsService implements OnInit{
       {
         id: 25,
         image:
-          'https://www.schattdecor.com/media/_processed_/f/7/csm_14-12129-001_1e19116123.jpg',
-        type: 'Brisbane Elm',
-        number_decor: '14-12129-001',
-        decor_type: 'Древесный декор',
+          'https://www.schattdecor.com/media/_processed_/e/5/csm_14-54152-001_613211a36a.jpg',
+        type: 'Альпийский Шифер',
+        number_decor: '14-54152-001',
+        decor_type: 'Имитация камня',
         description:
-          'Изящная текстура вяза выглядит особенно эффектно на крупногабаритных фасадах, где она создает сдержанную и приятную на вид поверхность. Здесь дизайн полностью раскрывает свою красоту и придает мебели элегантность, соответствующую духу времени. Одной из выдающихся особенностей этого мебельного декора является универсальная сочетаемость. Он органично вписывается в различные стили интерьера и гармонирует с широким спектром цветов и материалов. Это позволяет реализовывать индивидуальные варианты оформления и придавать каждому пространству эстетику, которая неподвластна времени.',
+          'Отличительным признаком этой имитации камня являются характерные для натурального сланцевого шифера неравномерно изломанные слои. В результате создаётся сдержанный трёхмерный эффект. Декор очень хорошо смотрится в популярной сегодня практически монохромной колористике.',
         size: '750 x 1300 mm',
         where_to_use: 'Мебель',
         other_images: [
-          'https://www.schattdecor.com/media/_processed_/f/7/csm_14-12129-001_1e19116123.jpg',
-          'https://www.schattdecor.com/media/_processed_/1/0/csm_14-12129-002_f6e1d2db8a.jpg',
-          'https://www.schattdecor.com/media/_processed_/1/f/csm_14-12129-003_81e7eddedf.jpg',
-          'https://www.schattdecor.com/media/_processed_/a/d/csm_14-12129-004_a76d2935f2.jpg',
+          'https://www.schattdecor.com/media/_processed_/e/5/csm_14-54152-001_613211a36a.jpg',
+          'https://www.schattdecor.com/media/_processed_/c/0/csm_14-54152-002_15eaed362c.jpg',
+          'https://www.schattdecor.com/media/_processed_/e/0/csm_14-54152-003_efa79b5fde.jpg',
+          'https://www.schattdecor.com/media/_processed_/0/f/csm_14-54152-004_7cf63716e0.jpg',
         ],
       },
       {
@@ -725,6 +725,69 @@ export class ProductsService implements OnInit{
           'https://www.schattdecor.com/media/_processed_/5/6/csm_30030-L188013_abb30157a8.jpg',
           'https://www.schattdecor.com/media/_processed_/f/c/csm_30030-L188014_3fe11aa201.jpg',
           'https://www.schattdecor.com/media/_processed_/9/4/csm_30030-L188015_28c70a8a69.jpg'
+        ],
+      },
+      {
+        id: 45,
+        image:
+          'https://www.schattdecor.com/media/_processed_/c/b/csm_4000398-07-000_5fd0a651fc.jpg',
+        type: 'Fern',
+        number_decor: '4000398-07-000',
+        decor_type: 'Графика и структуры',
+        description:
+          'Этот декор настолько реалистичен, что при его созерцании почти чувствуешь естественную структуру поверхности наощупь. Различные оттенки зелёного создают пластичное цветовое полотно. Захватывающая глубина рисунка превращает любое помещение в зелёный оазис. Неважно, целый рисунок или небольшой фрагмент – «Ферн» принесёт в дом дикую природу. Возможности комбинирования данного дизайна разнообразны: в сочетании с тёмными древесными декорами он выглядит элегантно, а со светлыми оттенками натуральной древесины смотрится современно и модно.',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          'https://www.schattdecor.com/media/_processed_/c/b/csm_4000398-07-000_5fd0a651fc.jpg',
+          'https://www.schattdecor.com/media/user_upload/09_Dekordetailseiten/Fern/493.jpg',
+        ],
+      },
+      {
+        id: 46,
+        image:
+          'https://www.schattdecor.com/media/_processed_/d/4/csm_14-53026-005_4f7d7446d6.jpg',
+        type: 'Micro',
+        number_decor: '14-53026-005',
+        decor_type: 'Графика и структуры',
+        description:
+          'Этот декор настолько реалистичен, что при его созерцании почти чувствуешь естественную структуру поверхности наощупь. Различные оттенки зелёного создают пластичное цветовое полотно. Захватывающая глубина рисунка превращает любое помещение в зелёный оазис. Неважно, целый рисунок или небольшой фрагмент – «Ферн» принесёт в дом дикую природу. Возможности комбинирования данного дизайна разнообразны: в сочетании с тёмными древесными декорами он выглядит элегантно, а со светлыми оттенками натуральной древесины смотрится современно и модно.',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          'https://www.schattdecor.com/media/_processed_/d/4/csm_14-53026-005_4f7d7446d6.jpg',
+        ],
+      },
+      {
+        id: 47,
+        image:
+          'https://www.schattdecor.com/media/_processed_/e/5/csm_14-54152-001_613211a36a.jpg',
+        type: 'Alpine Slate',
+        number_decor: '14-54152-001',
+        decor_type: 'Имитация камня',
+        description:
+          'Отличительным признаком этой имитации камня являются характерные для натурального сланцевого шифера неравномерно изломанные слои. В результате создаётся сдержанный трёхмерный эффект. Декор очень хорошо смотрится в популярной сегодня практически монохромной колористике.',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          'https://www.schattdecor.com/media/_processed_/e/5/csm_14-54152-001_613211a36a.jpg',
+        ],
+      },
+      {
+        id: 47,
+        image:
+          'https://www.schattdecor.com/media/_processed_/e/5/csm_14-54152-001_613211a36a.jpg',
+        type: 'Alpine Slate',
+        number_decor: '14-54152-001',
+        decor_type: 'Имитация камня',
+        description:
+          'Отличительным признаком этой имитации камня являются характерные для натурального сланцевого шифера неравномерно изломанные слои. В результате создаётся сдержанный трёхмерный эффект. Декор очень хорошо смотрится в популярной сегодня практически монохромной колористике.',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          'https://www.schattdecor.com/media/_processed_/e/5/csm_14-54152-001_613211a36a.jpg',
+          'https://www.schattdecor.com/media/_processed_/c/0/csm_14-54152-002_15eaed362c.jpg',
+          'https://www.schattdecor.com/media/_processed_/e/0/csm_14-54152-003_efa79b5fde.jpg',
         ],
       },
     ];

@@ -9,28 +9,24 @@ import { ProductsService } from '../../services/api-service/products.service';
 })
 export class CardsComponent implements OnInit {
   productCatalog: any[] = [];
-  numbers:number = 8
-  constructor(private productService: ProductsService){}
+  numbers: number = 8;
+  constructor(private productService: ProductsService) {}
 
   ngOnInit(): void {
-    this.getData()
-    
+    this.getData();
   }
 
-  incrementProducts(){
-    if(this.numbers<this.productCatalog.length){
-      this.numbers = this.numbers+8
+  incrementProducts() {
+    if (this.numbers < this.productCatalog.length) {
+      this.numbers = this.numbers + 8;
     }
-    
   }
-  getData(){
-    this.productService.dataArray$.subscribe(
-      {
-        next: (value)=>{
-          this.productCatalog = value
-        },
-        error: (err)=>console.log(err)
-      }
-    )
+  getData() {
+    this.productService.dataArray$.subscribe({
+      next: (value) => {
+        this.productCatalog = value;
+      },
+      error: (err) => console.log(err),
+    });
   }
 }

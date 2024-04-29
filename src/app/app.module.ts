@@ -49,6 +49,8 @@ import { CareerApthwayComponent } from './components/career-apthway/career-apthw
 import { WantedCardsComponent } from './components/wanted-cards/wanted-cards.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { NgxImageZoomModule } from 'ngx-image-zoom';
+import { ReferenceComponent } from './pages/reference/reference.component';
+import { StackedListComponent } from './components/stacked-list/stacked-list.component';
 
 @NgModule({
   declarations: [
@@ -96,6 +98,8 @@ import { NgxImageZoomModule } from 'ngx-image-zoom';
     CareerApthwayComponent,
     WantedCardsComponent,
     GalleryComponent,
+    ReferenceComponent,
+    StackedListComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, SharedModule, RouterLink, NgxImageZoomModule,],
   providers: [],

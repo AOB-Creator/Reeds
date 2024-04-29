@@ -80,21 +80,21 @@
             class="h-full w-full object-cover object-center"
           />
           <lib-ngx-image-zoom
-            [thumbImage]=myThumbnail
-            [fullImage]=myFullresImage
+            [thumbImage]="myThumbnail"
+            [fullImage]="myFullresImage"
             [magnification]="2"
             [enableScrollZoom]="true"
             [enableLens]="true"
             [lensWidth]="200"
             [lensHeight]="200"
-        ></lib-ngx-image-zoom>
+          ></lib-ngx-image-zoom>
         </div>
       </div>
       <div
         class="aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 sm:overflow-hidden sm:rounded-lg"
       >
         <img
-          [src] = imageUrl
+          [src]="imageUrl"
           alt="Model wearing plain white basic tee."
           class="h-full w-full object-cover object-center"
         />
@@ -259,10 +259,11 @@
           </div>
 
           <button
+            routerLink="/products"
             type="submit"
             class="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-gray-900 px-8 py-3 text-base font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
           >
-            Добавить в список избранного
+            Показать больше
           </button>
           <!-- Контакт  -->
           <p></p>
@@ -312,7 +313,6 @@
             </ul>
           </div>
         </div>
-        
 
         <div class="mt-10">
           <h2 class="text-sm font-medium text-gray-900">Details</h2>
@@ -325,14 +325,14 @@
               Gray&quot; limited release.
             </p>
             <lib-ngx-image-zoom
-            [thumbImage]=myThumbnail
-            [fullImage]=myFullresImage
-            [magnification]="2"
-            [enableScrollZoom]="true"
-            [enableLens]="true"
-            [lensWidth]="200"
-            [lensHeight]="200"
-        ></lib-ngx-image-zoom>
+              [thumbImage]="myThumbnail"
+              [fullImage]="myFullresImage"
+              [magnification]="2"
+              [enableScrollZoom]="true"
+              [enableLens]="true"
+              [lensWidth]="200"
+              [lensHeight]="200"
+            ></lib-ngx-image-zoom>
           </div>
         </div>
       </div>

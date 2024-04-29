@@ -8,6 +8,7 @@ import { DetailedInformationComponent } from './pages/detailed-information/detai
 import { ContactWithUsComponent } from './pages/contact-with-us/contact-with-us.component';
 import { CareersComponent } from './pages/careers/careers.component';
 import { DecoorationComponent } from './pages/decooration/decooration.component';
+import { ReferenceComponent } from './pages/reference/reference.component';
 
 const routes: Routes = [
   {
@@ -28,6 +29,11 @@ const routes: Routes = [
   {
     path: 'products',
     component: ProductsComponent,
+    children: [],
+  },
+  {
+    path: 'references',
+    component: ReferenceComponent,
     children: [],
   },
   {

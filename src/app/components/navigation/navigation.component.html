@@ -1,32 +1,67 @@
-
 <nav class="bg-white border-gray-200 dark:bg-white-900">
-  <div class="flex flex-wrap justify-between items-center mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8 p-4">
-      <a routerLink="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-gray">Muynak LDSP</span>
-      </a>
-      
-      <ul class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
-        <li>
-            <a routerLink="/decoration-showroom" class="text-gray-900 dark:text-gray hover:underline" aria-current="page">{{'navbar.dekor' | translate}}</a>
-        </li>
-        <li>
-            <a routerLink="/products" class="text-gray-900 dark:text-gray hover:underline">{{'navbar.products' | translate}}</a>
-        </li>
-        <li>
-            <a routerLink="/" class="text-gray-900 dark:text-gray hover:underline">{{'navbar.reference' | translate}}</a>
-        </li>
-        <li>
-            <a routerLink="/about-us" class="text-gray-900 dark:text-gray hover:underline">{{'navbar.aboutus' | translate}}</a>
-        </li>
-        <li>
-          <a routerLink="/careers-with-us" class="text-gray-900 dark:text-gray hover:underline">{{'navbar.career' | translate}}</a>
+  <div
+    class="flex flex-wrap justify-between items-center mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8 p-4"
+  >
+    <a routerLink="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <span
+        class="self-center text-2xl font-semibold whitespace-nowrap dark:text-gray"
+        >Muynak LDSP</span
+      >
+    </a>
+
+    <ul
+      class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm"
+    >
+      <li>
+        <a
+          routerLink="/decoration-showroom"
+          class="text-gray-900 dark:text-gray hover:underline"
+          aria-current="page"
+          >{{ "navbar.dekor" | translate }}</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="/products"
+          class="text-gray-900 dark:text-gray hover:underline"
+          >{{ "navbar.products" | translate }}</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="/references"
+          class="text-gray-900 dark:text-gray hover:underline"
+          >{{ "navbar.reference" | translate }}</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="/about-us"
+          class="text-gray-900 dark:text-gray hover:underline"
+          >{{ "navbar.aboutus" | translate }}</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="/careers-with-us"
+          class="text-gray-900 dark:text-gray hover:underline"
+          >{{ "navbar.career" | translate }}</a
+        >
       </li>
     </ul>
-      <div class="flex items-center space-x-6 rtl:space-x-reverse">
-          <a href="tel:5541251234" class="text-sm  text-gray-500 dark:text-gray hover:underline">(555) 412-1234</a>
-          <a href="#" class="text-sm  text-gray-400 dark:text-gray  -400 hover:underline">Login</a>
-          <app-lang-selector></app-lang-selector>
-      </div>
+    <div class="flex items-center space-x-6 rtl:space-x-reverse">
+      <a
+        href="tel:5541251234"
+        class="text-sm text-gray-500 dark:text-gray hover:underline"
+        >(555) 412-1234</a
+      >
+      <a
+        href="#"
+        class="text-sm text-gray-400 dark:text-gray -400 hover:underline"
+        >Login</a
+      >
+      <app-lang-selector></app-lang-selector>
+    </div>
   </div>
 </nav>
 <!-- <nav class="bg-gray-50 dark:bg-gray-900">

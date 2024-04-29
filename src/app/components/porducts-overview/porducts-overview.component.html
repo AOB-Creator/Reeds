@@ -58,11 +58,20 @@
       <div
         class="aspect-h-4 aspect-w-3 hidden overflow-hidden rounded-lg lg:block"
       >
-        <img
+        <!-- <img
           [src]="currentProduct[0].image"
           alt="Two each of gray, white, and black shirts laying flat."
-          class="h-full w-full object-cover object-center"
-        />
+        /> -->
+        <ng-magnizoom
+          [imageStyle]="{ 'height': '100%', 'max-width': '100%', 'max-height': '100%', 'cursor': 'pointer' }"
+          [imageClass]="{ 'custom-class': true }"
+          lensSizeUnit="PIXEL"
+          zoomCenterUnit="PIXEL"
+          [maxZoomFactor]="5"
+          [lensSize]="{ width: 350, height: 200 }"
+          zoomMode="LENS"
+          [imageSrc]="currentProduct[0].image">
+        </ng-magnizoom>
       </div>
       <div class="hidden lg:grid lg:grid-cols-1 lg:gap-y-8">
         <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
@@ -72,6 +81,7 @@
             alt="Model wearing plain black basic tee."
             class="h-full w-full object-cover object-center"
           />
+       
         </div>
         <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
           <img
@@ -79,25 +89,21 @@
             alt="Model wearing plain gray basic tee."
             class="h-full w-full object-cover object-center"
           />
-          <lib-ngx-image-zoom
-            [thumbImage]="myThumbnail"
-            [fullImage]="myFullresImage"
-            [magnification]="2"
-            [enableScrollZoom]="true"
-            [enableLens]="true"
-            [lensWidth]="200"
-            [lensHeight]="200"
-          ></lib-ngx-image-zoom>
+         
         </div>
       </div>
       <div
         class="aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 sm:overflow-hidden sm:rounded-lg"
       >
-        <img
-          [src]="imageUrl"
-          alt="Model wearing plain white basic tee."
-          class="h-full w-full object-cover object-center"
-        />
+        <ng-magnizoom
+          [imageStyle]="{ 'height': '100%', 'max-width': '100%', 'max-height': '100%', 'cursor': 'pointer' }"
+          [imageClass]="{ 'custom-class': true }"
+          lensSizeUnit="PIXEL"
+          zoomCenterUnit="PIXEL"
+          [lensSize]="{ width: 350, height: 200 }"
+          zoomMode="LENS"
+          [imageSrc]="imageUrl">
+        </ng-magnizoom>
       </div>
     </div>
 
@@ -115,7 +121,7 @@
       <div class="mt-4 lg:row-span-3 lg:mt-0">
         <h2 class="sr-only">Product information</h2>
         <p class="text-2xl tracking-tight text-gray-900">
-          Номер декора: {{ currentProduct[0].number_decor }}
+          Номер декора: <span style="font-family: monospace;">{{ currentProduct[0].number_decor }}</span> 
         </p>
 
         <!-- Reviews -->
@@ -196,37 +202,7 @@
 
         <form class="mt-10">
           <!-- Colors -->
-          <div>
-            <h3 class="text-sm font-medium text-gray-900">Color</h3>
-
-            <fieldset class="mt-4">
-              <legend class="sr-only">Choose a color</legend>
-              <div class="flex items-center space-x-3">
-                <label
-                  *ngFor="
-                    let item of currentProduct[0].other_images;
-                    let ind = index
-                  "
-                  class="relative overflow-hidden -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 focus:outline-none ring-gray-400"
-                >
-                  <input
-                    type="radio"
-                    name="color-choice"
-                    value="Gray"
-                    class="sr-only"
-                    aria-labelledby="color-choice-1-label"
-                  />
-                  <span id="color-choice-1-label" class="sr-only">Gray</span>
-                  <span
-                    aria-hidden="true"
-                    class="h-8 w-8 bg-gray-200 rounded-full border border-black border-opacity-10"
-                  >
-                    <img [src]="item" alt="" />
-                  </span>
-                </label>
-              </div>
-            </fieldset>
-          </div>
+        
 
           <!-- Sizes -->
           <div class="mt-10">
@@ -257,7 +233,12 @@
               </div>
             </fieldset>
           </div>
-
+          <div class="mt-10">
+            <h3 class="text-sm font-medium text-gray-900">QR Code</h3>
+            <div class="qr-code items-center">
+              <qr-code [value]="qrCode_Url" size="200" errorCorrectionLevel="M"></qr-code>
+            </div>
+          </div>
           <button
             routerLink="/products"
             type="submit"
@@ -319,21 +300,10 @@
 
           <div class="mt-4 space-y-6">
             <p class="text-sm text-gray-600">
-              The 6-Pack includes two black, two white, and two heather gray
-              Basic Tees. Sign up for our subscription service and be the first
-              to get new, exciting colors, like our upcoming &quot;Charcoal
-              Gray&quot; limited release.
+              Инженерная тростниковая древесина является инновационной и устойчивой альтернативой традиционным изделиям из древесины. Благодаря использованию тростника, быстрорастущего и возобновляемого ресурса, этот тип инженерной древесины обеспечивает прочность, долговечность и экологические преимущества. Его можно использовать в различных областях, таких как строительство, изготовление мебели и дизайн интерьера, обеспечивая универсальное и экологически чистое решение для современных нужд.
             </p>
-            <lib-ngx-image-zoom
-              [thumbImage]="myThumbnail"
-              [fullImage]="myFullresImage"
-              [magnification]="2"
-              [enableScrollZoom]="true"
-              [enableLens]="true"
-              [lensWidth]="200"
-              [lensHeight]="200"
-            ></lib-ngx-image-zoom>
           </div>
+          
         </div>
       </div>
     </div>

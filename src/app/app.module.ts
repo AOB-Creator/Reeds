@@ -50,6 +50,10 @@ import { WantedCardsComponent } from './components/wanted-cards/wanted-cards.com
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { NgxImageZoomModule } from 'ngx-image-zoom';
 import { ReferenceComponent } from './pages/reference/reference.component';
+import { TourismComponent } from './pages/tourism/tourism.component';
+import { StayUpToDateComponent } from './components/stay-up-to-date/stay-up-to-date.component';
+import { QrCodeModule } from 'ng-qrcode';
+import { NgMagnizoomModule } from 'ng-magnizoom';
 
 @NgModule({
   declarations: [
@@ -99,6 +103,8 @@ import { ReferenceComponent } from './pages/reference/reference.component';
     GalleryComponent,
     PricelistComponent,
     ReferenceComponent,
+    TourismComponent,
+    StayUpToDateComponent,
   ],
   imports: [
     BrowserModule,
@@ -106,6 +112,8 @@ import { ReferenceComponent } from './pages/reference/reference.component';
     SharedModule,
     RouterLink,
     NgxImageZoomModule,
+    QrCodeModule,
+    NgMagnizoomModule
   ],
   providers: [],
   bootstrap: [AppComponent],

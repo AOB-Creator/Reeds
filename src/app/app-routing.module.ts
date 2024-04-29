@@ -9,6 +9,7 @@ import { ContactWithUsComponent } from './pages/contact-with-us/contact-with-us.
 import { CareersComponent } from './pages/careers/careers.component';
 import { DecoorationComponent } from './pages/decooration/decooration.component';
 import { ReferenceComponent } from './pages/reference/reference.component';
+import { TourismComponent } from './pages/tourism/tourism.component';
 
 const routes: Routes = [
   {
@@ -34,6 +35,11 @@ const routes: Routes = [
   {
     path: 'references',
     component: ReferenceComponent,
+    children: [],
+  },
+  {
+    path: 'tourism-development-in-moynak',
+    component: TourismComponent,
     children: [],
   },
   {

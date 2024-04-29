@@ -20,7 +20,7 @@ export class PorductsOverviewComponent implements OnInit {
   prodService = inject(ProductsService);
   product_list: any[] = [];
   currentProduct: Employee[] = [];
-
+  qrCode_Url:string = ''
   imageUrl: string =
     'https://www.schattdecor.com/media/_processed_/e/5/csm_62_f86f7987ec.jpg';
   myThumbnail = this.imageUrl;
@@ -36,6 +36,7 @@ export class PorductsOverviewComponent implements OnInit {
     this.route.params.subscribe((params) => {
       const id = params['id'];
       this.number_decor = id;
+      this.qrCode_Url = window.location.host + '/products/detailed-info/'+this.number_decor
     });
     this.getData();
     this.currentProduct = this.CurrentItem(
@@ -65,7 +66,7 @@ export class PorductsOverviewComponent implements OnInit {
     setTimeout(() => {
       this.imageUrl =
         'https://www.schattdecor.com/media/_processed_/e/5/csm_62_f86f7987ec.jpg';
-    }, 3000);
+    }, 5000);
   }
 
   CurrentItem(data: Employee[], number_id: string): Employee[] {

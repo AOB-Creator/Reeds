@@ -50,7 +50,6 @@ import { WantedCardsComponent } from './components/wanted-cards/wanted-cards.com
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { NgxImageZoomModule } from 'ngx-image-zoom';
 import { ReferenceComponent } from './pages/reference/reference.component';
-import { StackedListComponent } from './components/stacked-list/stacked-list.component';
 
 @NgModule({
   declarations: [
@@ -98,12 +97,18 @@ import { StackedListComponent } from './components/stacked-list/stacked-list.com
     CareerApthwayComponent,
     WantedCardsComponent,
     GalleryComponent,
+    PricelistComponent,
     ReferenceComponent,
-    StackedListComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, SharedModule, RouterLink, NgxImageZoomModule,],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    SharedModule,
+    RouterLink,
+    NgxImageZoomModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule {}

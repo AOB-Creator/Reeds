@@ -1,0 +1,21 @@
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    li{
+        margin-right: 25px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 15px 0;
+        li{
+            margin-right: 15px;
+            margin-top: 10px;
+        }
+    }        
+}

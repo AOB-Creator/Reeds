@@ -22,6 +22,9 @@ export class PorductsOverviewComponent implements OnInit {
   currentProduct: Employee[] = [];
   qrCode_Url:string = ''
   telegramShare:string = ''
+  tweeterShare:string = ''
+  whatsUpShare:string = ''
+  linkedInShare:string = ''
   imageUrl: string =
     'https://www.schattdecor.com/media/_processed_/e/5/csm_62_f86f7987ec.jpg';
   myThumbnail = this.imageUrl;
@@ -38,7 +41,10 @@ export class PorductsOverviewComponent implements OnInit {
       const id = params['id'];
       this.number_decor = id;
       this.qrCode_Url = window.location.host + '/products/detailed-info/'+this.number_decor
-      this.telegramShare = 'https://t.me/share/url?url=' + this.qrCode_Url + '&text={text}'
+      this.telegramShare = 'https://t.me/share/url?url=' + this.qrCode_Url + '&text=Muynak LDSP'
+      this.tweeterShare = 'http://www.twitter.com/share?url=' + this.qrCode_Url
+      this.whatsUpShare = 'http://whatsapp://send?text='+this.qrCode_Url
+      this.linkedInShare = 'https://www.linkedin.com/sharing/share-offsite/?url='+this.qrCode_Url
     });
     this.getData();
     this.currentProduct = this.CurrentItem(

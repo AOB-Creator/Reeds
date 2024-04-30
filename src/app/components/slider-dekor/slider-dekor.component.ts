@@ -8,8 +8,10 @@ import { RouterLink } from '@angular/router';
 export class SliderDekorComponent implements OnInit{
 
   products:any[] = []
+  sliderPerImage:string = '4'
 
   ngOnInit(): void {
+  this.getWindow()  
     this.products = [
       {
         id: 1,
@@ -181,5 +183,17 @@ export class SliderDekorComponent implements OnInit{
      
     ]
   }
-
+  getWindow(){
+    
+    if(window.screen.width>1000){
+      this.sliderPerImage = '4'
+    }else if(window.screen.width<=1000 && window.screen.width>700){
+      this.sliderPerImage = '3'
+    }else if(window.screen.width<=700 && window.screen.width>600){
+      this.sliderPerImage = '2'
+    }else if(window.screen.width<=600 ){
+      this.sliderPerImage = '2'
+    }
+    console.log(window.screen.width, this.sliderPerImage);
+  }
 }

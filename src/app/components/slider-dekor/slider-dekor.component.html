@@ -1,22 +1,20 @@
 <section class="text-gray-600 body-font overflow-hidden">
     <div class="container py-14 mx-auto">
         
-      <div class="lg:w-4/5 mx-auto flex flex-wrap">
-        <h1 class="text-2xl font-bold text-gray-900 mb-4">{{'decor.titleKitchen' | translate}}</h1>
+      <div class="lg:w-4/5 mx-auto flex flex-wrap h-auto">
+        <h1 class="text-[14px] sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl px-2 font-bold text-gray-900 mb-4">{{'decor.titleKitchen' | translate}}</h1>
         <!-- <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="https://dummyimage.com/400x400"> -->
         <swiper-container 
-            slides-per-view="4"
+            [slides-per-view] = sliderPerImage
+            [slidesPerView] = sliderPerImage
             grid-rows="1"
             mousewheel-force-to-axis="true"  
-            breakpoints-640="2"
             autoplay="true" 
             delay="500"
-            breakpoints-1024="4"
-            
             pagination="true" 
             speed="500" 
             loop="true"
-            class="lg:w-full lg:h-[55vh] h-64 bg-slate-100 rounded-md overflow-hidden object-center rounded">
+            class="lg:w-full lg:h-[55vh] h-[55vh] bg-slate-100 rounded-md overflow-hidden object-center rounded">
             <swiper-slide
                 class="image-box bg-gray-100"
                 css-mode="true"

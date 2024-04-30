@@ -21,6 +21,7 @@ export class PorductsOverviewComponent implements OnInit {
   product_list: any[] = [];
   currentProduct: Employee[] = [];
   qrCode_Url:string = ''
+  telegramShare:string = ''
   imageUrl: string =
     'https://www.schattdecor.com/media/_processed_/e/5/csm_62_f86f7987ec.jpg';
   myThumbnail = this.imageUrl;
@@ -37,6 +38,7 @@ export class PorductsOverviewComponent implements OnInit {
       const id = params['id'];
       this.number_decor = id;
       this.qrCode_Url = window.location.host + '/products/detailed-info/'+this.number_decor
+      this.telegramShare = 'https://t.me/share/url?url=' + this.qrCode_Url + '&text={text}'
     });
     this.getData();
     this.currentProduct = this.CurrentItem(

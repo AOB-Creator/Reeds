@@ -11,6 +11,16 @@ export class FilterCardsComponent implements OnInit{
     products:any[]= []
     productService = inject(ProductsService)
     displayData:any[] = []
+    isOpened:boolean = false
+
+    test(){
+      alert(1)
+    }
+
+    isOpenGate(){
+      this.isOpened = !this.isOpened
+    }
+
     ngOnInit(): void {
       this.getData()
     }
@@ -21,7 +31,6 @@ export class FilterCardsComponent implements OnInit{
           next: (value:any)=>{
             this.products = value
             console.log(this.products);
-            
           },
           error: (err:any)=>{
             console.log(err);

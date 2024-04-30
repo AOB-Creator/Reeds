@@ -54,6 +54,7 @@ import { TourismComponent } from './pages/tourism/tourism.component';
 import { StayUpToDateComponent } from './components/stay-up-to-date/stay-up-to-date.component';
 import { QrCodeModule } from 'ng-qrcode';
 import { NgMagnizoomModule } from 'ng-magnizoom';
+import { TestComponent } from './components/test/test.component';
 
 @NgModule({
   declarations: [
@@ -105,6 +106,7 @@ import { NgMagnizoomModule } from 'ng-magnizoom';
     ReferenceComponent,
     TourismComponent,
     StayUpToDateComponent,
+    TestComponent,
   ],
   imports: [
     BrowserModule,

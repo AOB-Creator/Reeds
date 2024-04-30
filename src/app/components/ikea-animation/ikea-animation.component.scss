@@ -9,17 +9,17 @@
     }
     #switch{
         position: absolute;
-        top: -15%;
+        top: 0%;
         left: 50%;
         cursor: pointer;
         display: block;
         width: 40px;
         height: 40px;
         transition: .3s;
-        transform: translate(-50%) scale(1);
+        transform: translate(-50%, -50%) scale(1);
         &:hover{
             transition: .3s;
-            transform: translate(-50%) scale(1.12);
+            transform: translate(-50%, -50%) scale(1.12);
         }
     }
     #ikea-switch{

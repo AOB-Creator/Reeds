@@ -275,19 +275,16 @@ export class ProductsService implements OnInit{
       {
         id: 18,
         image:
-          'https://www.schattdecor.com/media/_processed_/8/4/csm_14-20032-005_f1f5a1c658.jpg',
-        type: 'Bilbao Walnut',
-        number_decor: '14-20032-005',
-        decor_type: 'Древесный декор',
+          'https://www.schattdecor.com/media/_processed_/8/c/csm_4000567-01-000_214b591760.jpg',
+        type: 'Helios',
+        number_decor: '4000567-01-000',
+        decor_type: 'Графика и структуры',
         description:
-          'Это мелкий узор, напоминающий орех, не содержащий выделяющихся деталей. Благодаря этому дизайн смотрится очень однородно и может использоваться для оформления больших участков и визуального расширения площади. Его особенностью является изогнутый широкий акцент, проходящий мягкой волной по всей поверхности декора.',
+          'The main characteristic of the Helios design is its circular elements that provide a beautiful, almost artistic touch that generates absolute recognition. Helios comes from Greek and means sun. Living up to its name, this decor radiates strength and energy, thanks to the metallic effects in the background. Overall, the decor plays with the design on many levels, giving it a spherical effect. The gently ascending circles in suspension resemble an impressionistic landscape. The 3D-like slatted look, which is the latest trend, also provides visual movement. In addition, Helios is a metaphor for / symbolizes Freiraum and shows unlimited creativity and new design possibilities.',
         size: '750 x 1300 mm',
         where_to_use: 'Мебель',
         other_images: [
-          'https://www.schattdecor.com/media/_processed_/8/4/csm_14-20032-005_f1f5a1c658.jpg',
-          'https://www.schattdecor.com/media/_processed_/9/b/csm_14-20032-006_83937b6414.jpg',
-          'https://www.schattdecor.com/media/_processed_/7/0/csm_14-20032-007_4f030101ac.jpg',
-          'https://www.schattdecor.com/media/_processed_/e/9/csm_14-20032-008_cfb45e1f6b.jpg',
+          'https://www.schattdecor.com/media/_processed_/8/c/csm_4000567-01-000_214b591760.jpg',
         ],
       },
       {

@@ -1,15 +1,9 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { MainComponent } from './pages/main/main.component';
-import { Page404Component } from './pages/page404/page404.component';
-import { AboutusComponent } from './pages/aboutus/aboutus.component';
-import { ProductsComponent } from './pages/products/products.component';
 import { DetailedInformationComponent } from './pages/detailed-information/detailed-information.component';
-import { ContactWithUsComponent } from './pages/contact-with-us/contact-with-us.component';
-import { CareersComponent } from './pages/careers/careers.component';
-import { DecoorationComponent } from './pages/decooration/decooration.component';
-import { ReferenceComponent } from './pages/reference/reference.component';
 import { TourismComponent } from './pages/tourism/tourism.component';
+import { CareersComponent } from './pages/careers/careers.component';
 
 const routes: Routes = [
   {
@@ -18,45 +12,41 @@ const routes: Routes = [
     title: 'Moynak LDSP',
   },
   {
-    path: 'about-us',
-    component: AboutusComponent,
-    title: 'Moynak LDSP',
+    path: '',
+    loadChildren: ()=>import('./pages/modules/aboutus/aboutus.module').then((m)=>m.AboutusModule)
   },
   {
-    path: 'decoration-showroom',
-    component: DecoorationComponent,
-    children: [],
+    path: '',
+    loadChildren: ()=>import('./pages/modules/decoration/decoration.module').then((d)=>d.DecorationModule)
   },
   {
-    path: 'products',
-    component: ProductsComponent,
-    children: [],
+    path: '',
+    loadChildren: ()=>import('./pages/modules/products/products.module').then((p)=>p.ProductsModule)
   },
   {
-    path: 'references',
-    component: ReferenceComponent,
-    children: [],
+    path: '',
+    loadChildren: ()=>import('./pages/modules/reference/reference.module').then((r)=> r.ReferenceModule)
   },
   {
     path: 'tourism-development-in-moynak',
-    component: TourismComponent,
-    children: [],
+    loadChildren: ()=> import('./pages/modules/tourism/tourism.module').then((m) => m.TourismModule)
   },
   {
-    path: 'careers-with-us',
-    component: CareersComponent,
-    children: [],
+    path: '',
+    loadChildren: ()=>import('./pages/modules/careers/careers.module').then((c) => c.CareersModule),
+    title: 'Career with us'
   },
   {
-    path: 'products/detailed-info/:id',
-    component: DetailedInformationComponent,
-    title: 'Detailed Information',
-  },
-  {
-    path: 'contact-with-us',
-    component: ContactWithUsComponent,
+    path: '',
+    loadChildren: ()=> import('./pages/modules/contact-with/contact-with.module').then((c) => c.ContactWithModule),
     title: 'Contact',
   },
+  {
+   path:'',
+   loadChildren: ()=>import('./pages/modules/detailed-info/detailed-info.module').then((m)=>m.DetailedInfoModule)
+  },
+  
+ 
   // {
   //   path: '**',
   //   component: Page404Component,
@@ -65,7 +55,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {preloadingStrategy: PreloadAllModules})],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

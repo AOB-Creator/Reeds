@@ -55,14 +55,24 @@ import { StayUpToDateComponent } from './components/stay-up-to-date/stay-up-to-d
 import { QrCodeModule } from 'ng-qrcode';
 import { NgMagnizoomModule } from 'ng-magnizoom';
 import { TestComponent } from './components/test/test.component';
-
+import { CareersModule } from './pages/modules/careers/careers.module';
+import { DecorationModule } from './pages/modules/decoration/decoration.module';
+import { AboutusModule } from './pages/modules/aboutus/aboutus.module';
+import { NgOptimizedImage } from '@angular/common'
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderSectionsComponent,
+    SubscribeOurLetterComponent,
+    ContactSectionComponent,
+    ContactWithUsComponent,
+    AboutStepsComponent,
+    NewsAboutUsComponent,
+    CareerApthwayComponent,
+    DecoorationComponent,
     CardsComponent,
     FooterComponent,
     MainComponent,
-    AboutusComponent,
     Page404Component,
     NavigationComponent,
     DetailedInformationComponent,
@@ -72,13 +82,10 @@ import { TestComponent } from './components/test/test.component';
     TrustedByComponent,
     DeployYourAppComponent,
     PricelistComponent,
-    HeaderSectionsComponent,
-    SubscribeOurLetterComponent,
     StatsComponent,
     TestimonialsComponent,
     BlogsComponent,
     ContentSectionComponent,
-    ContactSectionComponent,
     PorductsOverviewComponent,
     ProductListsComponent,
     QuickPrevComponent,
@@ -86,11 +93,8 @@ import { TestComponent } from './components/test/test.component';
     ProFeaturesComponent,
     DesignedInfoComponent,
     AboutMapComponent,
-    ContactWithUsComponent,
     ImportantDatesComponent,
     BrandingCompaniesComponent,
-    AboutStepsComponent,
-    NewsAboutUsComponent,
     LoadingComponent,
     LangSelectorComponent,
     CareersComponent,
@@ -99,7 +103,6 @@ import { TestComponent } from './components/test/test.component';
     SliderDekorComponent,
     ProductCardComponent,
     FilterCardsComponent,
-    CareerApthwayComponent,
     WantedCardsComponent,
     GalleryComponent,
     PricelistComponent,
@@ -107,15 +110,14 @@ import { TestComponent } from './components/test/test.component';
     TourismComponent,
     StayUpToDateComponent,
     TestComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SharedModule,
     RouterLink,
-    NgxImageZoomModule,
-    QrCodeModule,
-    NgMagnizoomModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent],

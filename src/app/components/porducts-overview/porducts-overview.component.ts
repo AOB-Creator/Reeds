@@ -10,6 +10,7 @@ import {
 import { ActivatedRoute } from '@angular/router';
 import { ProductsService } from '../../services/api-service/products.service';
 import { RouterLink } from '@angular/router';
+import { SEOServiceService } from '../../services/settings/seoservice.service';
 
 @Component({
   selector: 'app-porducts-overview',
@@ -17,6 +18,7 @@ import { RouterLink } from '@angular/router';
   styleUrl: './porducts-overview.component.scss',
 })
 export class PorductsOverviewComponent implements OnInit {
+  metaSEO:SEOServiceService = inject(SEOServiceService)
   number_decor: string = '';
   prodService = inject(ProductsService);
   product_list: any[] = [];
@@ -38,7 +40,7 @@ export class PorductsOverviewComponent implements OnInit {
 
   ngOnInit(): void {
     
-    
+
     this.myThumbnail =
       'https://www.schattdecor.com/media/_processed_/3/0/csm_Produktinnovationen_Symbiose2_9699ae315d.jpg';
     this.route.params.subscribe((params) => {
@@ -55,6 +57,13 @@ export class PorductsOverviewComponent implements OnInit {
       this.product_list,
       this.number_decor
     );
+
+    const title = this.currentProduct[0].type;
+    const description = this.currentProduct[0].description
+    const imageUrl = this.currentProduct[0].image;
+
+    this.metaSEO.updateMetaTags(title, description, imageUrl);
+
   }
 
   FindDataType(str: string) {

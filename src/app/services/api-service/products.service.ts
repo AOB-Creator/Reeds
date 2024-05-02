@@ -771,20 +771,37 @@ export class ProductsService implements OnInit{
         ],
       },
       {
-        id: 47,
+        id: 48,
         image:
-          'https://www.schattdecor.com/media/_processed_/e/5/csm_14-54152-001_613211a36a.jpg',
-        type: 'Alpine Slate',
-        number_decor: '14-54152-001',
-        decor_type: 'Имитация камня',
+          'https://www.schattdecor.com/media/_processed_/c/c/csm_14-54193-001_26bbf7980a.jpg',
+        type: 'Мун',
+        number_decor: '14-54193-001',
+        decor_type: 'Металл и бетон',
         description:
-          'Отличительным признаком этой имитации камня являются характерные для натурального сланцевого шифера неравномерно изломанные слои. В результате создаётся сдержанный трёхмерный эффект. Декор очень хорошо смотрится в популярной сегодня практически монохромной колористике.',
+          'Этот декор получил своё название благодаря удивительной оптике бетона, напоминающей поверхность луны: неравномерные участки, словно кто-то обработал поверхность при помощи раствора и шпателя для придания неоднородной структуры и цвета. И действительно: исходный материал этого мебельного декора обрабатывался с помощью особой техники нанесения цемента различными шпателями для придания грубого внешнего вида. Универсальность декора «Moon» позволяет применять его на самых различных поверхностях, в том числе на столешницах.',
         size: '750 x 1300 mm',
         where_to_use: 'Мебель',
         other_images: [
-          'https://www.schattdecor.com/media/_processed_/e/5/csm_14-54152-001_613211a36a.jpg',
-          'https://www.schattdecor.com/media/_processed_/c/0/csm_14-54152-002_15eaed362c.jpg',
-          'https://www.schattdecor.com/media/_processed_/e/0/csm_14-54152-003_efa79b5fde.jpg',
+          'https://www.schattdecor.com/media/_processed_/c/c/csm_14-54193-001_26bbf7980a.jpg',
+          'https://www.schattdecor.com/media/_processed_/2/7/csm_14-54193-003_fd49e6c992.jpg',
+          'https://www.schattdecor.com/media/_processed_/5/9/csm_14-54193-004_bf213c1a7a.jpg',
+        ],
+      },
+      {
+        id: 49,
+        image:
+          'https://www.schattdecor.com/media/_processed_/3/2/csm_14-01083-001_8fd941d388.jpg',
+        type: 'Елочка Арктическая',
+        number_decor: '14-01083-001',
+        decor_type: 'Металл и бетон',
+        description:
+          'Особенный дизайн для оформления мебельных поверхностей: Елочка Арктическая. Декор соответствует долгосрочному тренду по использованию укладки типа "ёлочка", хорошо известной нам по напольным покрытиям в старых зданиях, современных лофтах и городских апартаментах. Данный дизайн излучает стиль, шик и не привязывается к определённой эпохе.',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          'https://www.schattdecor.com/media/_processed_/3/2/csm_14-01083-001_8fd941d388.jpg',
+          'https://www.schattdecor.com/media/_processed_/3/3/csm_14-01083-002_5d70adbc0f.jpg',
+          'https://www.schattdecor.com/media/_processed_/b/5/csm_14-01083-004_98cef2dbc4.jpg',
         ],
       },
     ];

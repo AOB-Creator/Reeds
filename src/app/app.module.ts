@@ -117,7 +117,9 @@ import { NgOptimizedImage } from '@angular/common'
     AppRoutingModule,
     SharedModule,
     RouterLink,
-    
+    QrCodeModule,
+    NgxImageZoomModule,
+    NgMagnizoomModule
   ],
   providers: [],
   bootstrap: [AppComponent],

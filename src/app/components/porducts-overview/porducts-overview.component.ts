@@ -10,6 +10,7 @@ import {
 import { ActivatedRoute } from '@angular/router';
 import { ProductsService } from '../../services/api-service/products.service';
 import { RouterLink } from '@angular/router';
+
 @Component({
   selector: 'app-porducts-overview',
   templateUrl: './porducts-overview.component.html',
@@ -30,11 +31,14 @@ export class PorductsOverviewComponent implements OnInit {
   myThumbnail = this.imageUrl;
   myFullresImage: any =
     'https://www.schattdecor.com/media/_processed_/e/5/csm_62_f86f7987ec.jpg';
+
   constructor(private route: ActivatedRoute) {}
 
   @Output() typeGroup = new EventEmitter<string>();
 
   ngOnInit(): void {
+    
+    
     this.myThumbnail =
       'https://www.schattdecor.com/media/_processed_/3/0/csm_Produktinnovationen_Symbiose2_9699ae315d.jpg';
     this.route.params.subscribe((params) => {

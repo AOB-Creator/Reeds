@@ -58,7 +58,8 @@ import { TestComponent } from './components/test/test.component';
 import { CareersModule } from './pages/modules/careers/careers.module';
 import { DecorationModule } from './pages/modules/decoration/decoration.module';
 import { AboutusModule } from './pages/modules/aboutus/aboutus.module';
-import { NgOptimizedImage } from '@angular/common'
+import { NgOptimizedImage } from '@angular/common';
+import { DecorCardsComponent } from './components/decor-cards/decor-cards.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -110,7 +111,8 @@ import { NgOptimizedImage } from '@angular/common'
     TourismComponent,
     StayUpToDateComponent,
     TestComponent,
-    AboutusComponent
+    AboutusComponent,
+    DecorCardsComponent
   ],
   imports: [
     BrowserModule,

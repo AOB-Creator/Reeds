@@ -56,7 +56,7 @@
       class="mx-auto mt-6 max-w-5xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8"
     >
       <div
-        class="aspect-h-4 aspect-w-3 hidden overflow-hidden rounded-lg lg:block"
+        class="aspect-h-4 aspect-w-3 overflow-hidden rounded-lg lg:block"
       >
         <!-- <img
           [src]="currentProduct[0].image"
@@ -74,7 +74,7 @@
         </ng-magnizoom>
       </div>
       <div class="lg:grid lg:grid-cols-1 lg:gap-y-8 grid gap-y-8">
-        <div class="aspect-h-2 mt-2 aspect-w-3 overflow-hidden rounded-lg">
+        <div class="aspect-h-2 mt-2 aspect-w-3 overflow-hidden hidden lg:block rounded-lg">
           <img
             id="image1"
             src="https://www.schattdecor.com/media/_processed_/c/e/csm_Montana_Oak_Hrmony_Oak_Himalaya_11_5910343bca.jpg"
@@ -83,7 +83,7 @@
           />
        
         </div>
-        <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
+        <div class="aspect-h-2 aspect-w-3 overflow-hidden hidden lg:block rounded-lg">
           <img
             src="https://www.schattdecor.com/media/_processed_/3/0/csm_Produktinnovationen_Symbiose2_9699ae315d.jpg"
             alt="Model wearing plain gray basic tee."
@@ -93,7 +93,7 @@
         </div>
       </div>
       <div
-        class="aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 sm:overflow-hidden sm:rounded-lg"
+        class="aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 hidden lg:block sm:overflow-hidden sm:rounded-lg"
       >
         <ng-magnizoom
           [imageStyle]="{ 'height': '100%', 'max-width': '100%', 'max-height': '100%', 'cursor': 'pointer' }"
@@ -109,7 +109,7 @@
 
     <!-- Product info -->
     <div
-      class="mx-auto max-w-2xl px-4 pb-16 pt-10 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8 lg:px-8 lg:pb-24 lg:pt-16"
+      class="mx-auto max-w-7xl px-4 pb-16 pt-10 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8 lg:px-8 lg:pb-24 lg:pt-16"
     >
       <div class="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
         <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
@@ -239,7 +239,7 @@
               <qr-code [value]="qrCode_Url" size="200" errorCorrectionLevel="M"></qr-code>
             </div>
             <div class="shareButton p-2">
-              <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
+              <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-start md:justify-start md:w-auto">
                 <a [href]=telegramShare target="_blank" class="text-gray-900">
                   <img width="25" src="../../../assets/images/icons/telegram-svgrepo-com.svg"  alt="Telegram share images">
                 </a>

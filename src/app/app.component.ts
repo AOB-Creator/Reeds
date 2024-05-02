@@ -8,7 +8,11 @@ import { RouterLink } from '@angular/router';
 })
 export class AppComponent {
   title = 'reeds';
-  constructor(private translateService: TranslateService){
+  loading:boolean = false
+  constructor(private translateService: TranslateService){   
+    this.loading = true
+    console.log("Bundle files loaded");
+    
     this.translateService.setDefaultLang('uz')
     this.translateService.use(localStorage.getItem('lang') || 'en')
   }

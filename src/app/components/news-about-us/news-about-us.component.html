@@ -1,6 +1,6 @@
 <section class="text-gray-600 body-font">
   <div
-    class="container px-5 py-14 mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8 p-4"
+    class="container px-5 py-14 mx-auto"
   >
     <div class="flex flex-col">
       <div class="h-1 bg-gray-200 rounded overflow-hidden">
@@ -16,89 +16,23 @@
       </div>
     </div>
     <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+      <div *ngFor="let each of news; let ind = index" class="p-4 md:w-1/3 sm:mb-0 mb-6">
         <div class="rounded-lg h-64 overflow-hidden bg-gray-900">
           <img
             alt="content"
             class="object-contain object-center h-full w-full"
-            src="../../../assets/images/news/2-21.jpg"
+            [src]="each.image"
           />
         </div>
         <h2 class="text-xl font-medium title-font text-gray-900 mt-5">
-          Мойнақ районында “MUYNAK LDSP” кәрханасының ашылыў мәресими болып өтти
+          {{each.title}}
         </h2>
         <p class="text-base leading-relaxed mt-2">
-          Onda Qaraqalpaqstan Respublikası Joqarǵı Keńesiniń Baslıǵı Amanbay
-          Orınbaev...
+          {{each.description}}
         </p>
         <a
           target="_blank"
-          href="https://joqargikenes.uz/qr/15076.html?print=print"
-          class="text-gray-500 inline-flex items-center mt-3"
-          >читать далее
-          <svg
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            class="w-4 h-4 ml-2"
-            viewBox="0 0 24 24"
-          >
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg>
-        </a>
-      </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-64 overflow-hidden">
-          <img
-            alt="content"
-            class="object-cover object-center h-full w-full"
-            src="../../../assets/images/news/dca7c224b7f022cb0318c41f7ffa721f.jpg"
-          />
-        </div>
-        <h2 class="text-lg font-medium title-font text-gray-900 mt-5">
-          В Каракалпакстане запущено новое предприятие по производству...
-        </h2>
-        <p class="text-base leading-relaxed mt-2">
-          В Муйнакском районе запущено новое предприятие по ...
-        </p>
-        <a
-          target="_blank"
-          href="https://kun.uz/ru/news/2022/12/09/v-karakalpakstane-zapushcheno-novoye-predpriyatiye-po-proizvodstvu-dsp-paneley"
-          class="text-gray-500 inline-flex items-center mt-3"
-          >читать далее
-          <svg
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            class="w-4 h-4 ml-2"
-            viewBox="0 0 24 24"
-          >
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg>
-        </a>
-      </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-64 overflow-hidden">
-          <img
-            alt="content"
-            class="object-cover object-center h-full w-full"
-            src="../../../assets/images/news/photo_2023-01-26_23-14-29-1024x682.jpg"
-          />
-        </div>
-        <h2 class="text-lg font-medium title-font text-gray-900 mt-5">
-          В Муйнакском районе Каракалпакстана открылся завод по производству
-          ЛДСП, который обошелся в 81 миллиард..
-        </h2>
-        <p class="text-base leading-relaxed mt-2">
-          Информационная служба Министерства инвестиций ..
-        </p>
-        <a
-          target="_blank"
-          href="https://nuz.uz/2022/12/09/v-mujnakskom-rajone-karakalpakstana-otkrylsya-zavod-po-proizvodstvu-ldsp-kotoryj-oboshelsya-v-81-milliard-sumov/?ysclid=lvaq5na6bx490046294"
+          [href]="each.reference"
           class="text-gray-500 inline-flex items-center mt-3"
           >читать далее
           <svg

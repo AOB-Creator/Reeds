@@ -1,0 +1,26 @@
+.card{
+    position: relative;
+    transform: scale(1);
+    transition: .4s;
+    cursor: pointer;
+    &:hover img{
+        transition: .4s;
+        transform: scale(1.06);
+    }
+    .covered{
+        position: absolute;
+        width: 100%;
+        height: 6vh;
+        background-color: rgba(0, 0, 0, 0.342);
+        bottom: 0;
+        left: 0;
+        padding: 0px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .typeitem{
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+}

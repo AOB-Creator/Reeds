@@ -59,7 +59,11 @@ import { CareersModule } from './pages/modules/careers/careers.module';
 import { DecorationModule } from './pages/modules/decoration/decoration.module';
 import { AboutusModule } from './pages/modules/aboutus/aboutus.module';
 import { NgOptimizedImage } from '@angular/common';
-import { DecorCardsComponent } from './components/decor-cards/decor-cards.component'
+import { DecorCardsComponent } from './components/decor-cards/decor-cards.component';
+import { PlitaCardsComponent } from './components/plita-cards/plita-cards.component';
+import { MeetOurLeadersComponent } from './components/meet-our-leaders/meet-our-leaders.component';
+import { AnimatedcardsComponent } from './components/animatedcards/animatedcards.component';
+import { MatrixComponent } from './components/matrix/matrix.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -112,7 +116,11 @@ import { DecorCardsComponent } from './components/decor-cards/decor-cards.compon
     StayUpToDateComponent,
     TestComponent,
     AboutusComponent,
-    DecorCardsComponent
+    DecorCardsComponent,
+    PlitaCardsComponent,
+    MeetOurLeadersComponent,
+    AnimatedcardsComponent,
+    MatrixComponent
   ],
   imports: [
     BrowserModule,

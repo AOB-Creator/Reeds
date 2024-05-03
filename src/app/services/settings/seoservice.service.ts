@@ -20,5 +20,4 @@ export class SEOServiceService {
     this.meta.updateTag({ property: 'og:image', content: imageUrl });
   }
   
-
 }

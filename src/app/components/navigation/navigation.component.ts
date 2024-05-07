@@ -10,4 +10,8 @@ export class NavigationComponent implements OnInit{
   ngOnInit(): void {
     
   }
+
+  qrScanner(){
+    alert("Qr code scanner")
+  }
 }

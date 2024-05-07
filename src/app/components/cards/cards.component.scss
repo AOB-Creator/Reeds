@@ -18,9 +18,18 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        &:hover .icon{
+            fill: green;
+        }
         .typeitem{
             font-size: 14px;
             font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .icon{
+                fill: red !important;
+            }
         }
     }
 }

@@ -1,3 +1,7 @@
+.qr-scanner{
+    cursor: pointer;
+}
+
 ul{
     display: flex;
     align-items: center;
@@ -6,6 +10,7 @@ ul{
         margin-right: 25px;
     }
 }
+
 
 @media (min-width: 300px) and (max-width: 500px) {
     ul{

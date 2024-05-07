@@ -1,0 +1,25 @@
+<div class="main-page-slider">
+    <div class="w-full">
+        <swiper-container
+        [slides-per-view] = sliderPerImage
+        [slidesPerView] = sliderPerImage
+        grid-rows="1"
+        mousewheel-force-to-axis="true"  
+        autoplay="true" 
+        delay="500"
+        pagination="true" 
+        speed="500" 
+        loop="true"
+        class="lg:w-full w-full lg:h-[80vh] h-[100vh] bg-slate-100 overflow-hidden object-center rounded">
+        <swiper-slide
+            class="image-box bg-gray-100"
+            css-mode="true"
+            *ngFor="let item of [1,2,3,4]">
+            
+            <div class="coverage"></div>
+            <img class="h-full w-full object-cover" src="https://bootstrapmade.com/demo/templates/ZenBlog/assets/img/post-landscape-1.jpg" alt="asd">
+            
+        </swiper-slide>
+    </swiper-container>
+    </div>
+</div>

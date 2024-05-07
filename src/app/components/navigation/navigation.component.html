@@ -53,13 +53,12 @@
       <a
         href="tel:5541251234"
         class="text-sm text-gray-500 dark:text-gray hover:underline"
-        >(555) 412-1234</a
+        >(91) 393-44-69 </a
       >
-      <a
-        href="#"
-        class="text-sm text-gray-400 dark:text-gray -400 hover:underline"
-        >Login</a
-      >
+      <div (click)="qrScanner()" class="qr-scanner">
+        <img width="30px" src="../../../assets/images/icons/qr-scan-svgrepo-com.svg" alt="">
+      </div>
+      
       <app-lang-selector></app-lang-selector>
     </div>
   </div>

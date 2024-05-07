@@ -1,0 +1,13 @@
+.main-page-slider{
+    height: 80vh;
+    background-color: rebeccapurple;
+    position: relative;
+    .coverage{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+    }
+}

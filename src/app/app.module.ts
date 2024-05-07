@@ -63,7 +63,8 @@ import { DecorCardsComponent } from './components/decor-cards/decor-cards.compon
 import { PlitaCardsComponent } from './components/plita-cards/plita-cards.component';
 import { MeetOurLeadersComponent } from './components/meet-our-leaders/meet-our-leaders.component';
 import { AnimatedcardsComponent } from './components/animatedcards/animatedcards.component';
-import { MatrixComponent } from './components/matrix/matrix.component'
+import { MatrixComponent } from './components/matrix/matrix.component';
+import { MainSliderComponent } from './components/main-slider/main-slider.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -120,7 +121,8 @@ import { MatrixComponent } from './components/matrix/matrix.component'
     PlitaCardsComponent,
     MeetOurLeadersComponent,
     AnimatedcardsComponent,
-    MatrixComponent
+    MatrixComponent,
+    MainSliderComponent
   ],
   imports: [
     BrowserModule,

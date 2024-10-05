@@ -65,6 +65,7 @@ import { MeetOurLeadersComponent } from './components/meet-our-leaders/meet-our-
 import { AnimatedcardsComponent } from './components/animatedcards/animatedcards.component';
 import { MatrixComponent } from './components/matrix/matrix.component';
 import { MainSliderComponent } from './components/main-slider/main-slider.component'
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -131,7 +132,8 @@ import { MainSliderComponent } from './components/main-slider/main-slider.compon
     RouterLink,
     QrCodeModule,
     NgxImageZoomModule,
-    NgMagnizoomModule
+    NgMagnizoomModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

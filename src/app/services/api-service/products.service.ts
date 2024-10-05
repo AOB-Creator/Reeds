@@ -12,7 +12,28 @@ export class ProductsService implements OnInit{
   public displayableData$: Observable<any[]> = this.dataArraySubject.asObservable();
 
   productCatalog:any[] = []
+  productCatalog2:any[] = []
+
   constructor() { 
+
+    this.productCatalog2 = [
+      {
+        id: 1,
+        image:
+          'assets/images/decors/',
+        type: 'Acapulco Rombo',
+        number_decor: '4000584-01-000',
+        decor_type: 'Имитация камня',
+        description: '',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          'https://www.schattdecor.com/media/_processed_/9/4/csm_14-12607-003_a7d0a6ee8d.jpg',
+          'https://www.schattdecor.com/media/_processed_/d/4/csm_14-12607-004_0602604d24.jpg',
+        ],
+      },
+    ]
+
     this.productCatalog = [
       {
         id: 1,

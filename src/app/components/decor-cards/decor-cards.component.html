@@ -1,1 +1,8 @@
-<p>decor-cards works!</p>
+<div class="decor-cards flex items-center justify-center">
+    <input class="btn" type="text" [(ngModel)]="textToCopy"/>
+    <h1 [ngClass]="isDynamcos"> {{count()}} {{textToCopy}} </h1>
+    <button class="btn" [ngClass]="isNote?'copy':'copied'" (click)="copy(textToCopy)"> {{btnContent}} </button>  
+    <button class="btn copy" (click)="increase()">+</button>
+    <button class="btn copy" (click)="decrease()">-</button>
+    
+</div>

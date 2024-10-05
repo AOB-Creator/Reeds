@@ -4,6 +4,7 @@ import { MainComponent } from './pages/main/main.component';
 import { DetailedInformationComponent } from './pages/detailed-information/detailed-information.component';
 import { TourismComponent } from './pages/tourism/tourism.component';
 import { CareersComponent } from './pages/careers/careers.component';
+import { Page404Component } from './pages/page404/page404.component';
 
 const routes: Routes = [
   {
@@ -43,15 +44,14 @@ const routes: Routes = [
   },
   {
    path:'',
-   loadChildren: ()=>import('./pages/modules/detailed-info/detailed-info.module').then((m)=>m.DetailedInfoModule)
+   loadChildren: ()=>import('./pages/modules/detailed-info/detailed-info.module').then((m)=>m.DetailedInfoModule),
+   title: 'Toliq malumotlar'
   },
-  
- 
-  // {
-  //   path: '**',
-  //   component: Page404Component,
-  //   title: 'Moynak LDSP',
-  // },
+  {
+    path: '**',
+    component: Page404Component,
+    title: 'Moynak LDSP',
+  },
 ];
 
 @NgModule({

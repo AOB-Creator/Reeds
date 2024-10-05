@@ -22,6 +22,7 @@
     "@ngx-translate/http-loader": "^8.0.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "ng-magnizoom": "^1.4.0",
+    "ngx-clipboard": "^16.0.0",
     "ngx-image-zoom": "^3.0.0",
     "rxjs": "~7.8.0",
     "swiper": "^11.1.1",

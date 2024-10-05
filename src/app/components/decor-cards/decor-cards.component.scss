@@ -1,0 +1,36 @@
+.decor-cards{
+    height: 80vh;
+    background-color: saddlebrown;
+    
+    .saveable{
+        background-color: rebeccapurple;
+    }
+    .whiteText{
+        color: white;
+    }
+    .pads{
+        padding: 10px 15px;
+    }
+    .btn{
+        padding: 7px 13px;
+        border-radius: 4px;
+        font-size: 11px;
+        outline: none;
+    }
+    .bad{
+        background-color: greenyellow;
+    }
+    .good{
+        background-color: darkblue;
+        display: none;
+    }
+
+    .copy{
+        background-color: black;
+        color: whitesmoke;
+    }
+    .copied{
+        background-color: rgb(88, 117, 45);
+        color: whitesmoke;
+    }
+}

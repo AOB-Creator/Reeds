@@ -18,7 +18,7 @@ import { SEOServiceService } from '../../services/settings/seoservice.service';
   styleUrl: './porducts-overview.component.scss',
 })
 export class PorductsOverviewComponent implements OnInit {
-  metaSEO:SEOServiceService = inject(SEOServiceService)
+  metaSnEO:SEOServiceService = inject(SEOServiceService)
   number_decor: string = '';
   prodService = inject(ProductsService);
   product_list: any[] = [];
@@ -62,7 +62,7 @@ export class PorductsOverviewComponent implements OnInit {
     const description = this.currentProduct[0].description
     const imageUrl = this.currentProduct[0].image;
 
-    this.metaSEO.updateMetaTags(title, description, imageUrl);
+    this.metaSnEO.updateMetaTags(title, description, imageUrl);
 
   }
 

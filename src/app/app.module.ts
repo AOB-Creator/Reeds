@@ -66,6 +66,8 @@ import { AnimatedcardsComponent } from './components/animatedcards/animatedcards
 import { MatrixComponent } from './components/matrix/matrix.component';
 import { MainSliderComponent } from './components/main-slider/main-slider.component'
 import { FormsModule } from '@angular/forms';
+import { HereToHelpComponent } from './components/here-to-help/here-to-help.component';
+import { SupportComponent } from './components/support/support.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -123,7 +125,9 @@ import { FormsModule } from '@angular/forms';
     MeetOurLeadersComponent,
     AnimatedcardsComponent,
     MatrixComponent,
-    MainSliderComponent
+    MainSliderComponent,
+    HereToHelpComponent,
+    SupportComponent
   ],
   imports: [
     BrowserModule,

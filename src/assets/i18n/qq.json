@@ -9,13 +9,14 @@
         "products": "Ónimler",
         "reference": "Maǵlıwmat ",
         "aboutus": "Biz haqqımızda ",
-        "career": "Karyera"
+        "career": "Karyera",
+        "contactwithus": "Biz benen baylanisin'"
     },
     "aboutus": {
-        "slogan": "Barlıq kásiplesler birden-bir maqset menen kúshli jámáátti quraydı : biz “Bir derek. Sheksiz sheshimler."
+        "slogan": "Barlıq kásiplesler birden-bir maqset menen kúshli jámáátti quraydi : biz “Bir derek. Sheksiz sheshimler."
     },
     "decor": {
-        "titleKitchen": "Asxanańızdı biziń ónimlerimiz menen bezang"
+        "titleKitchen": "Asxanańizdi biziń ónimlerimiz menen bezen'"
     },
     "product": {
         "typeDecor": "Dekoratsiya túri"

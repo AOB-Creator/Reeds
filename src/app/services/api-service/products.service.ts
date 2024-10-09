@@ -353,7 +353,214 @@ export class ProductsService implements OnInit{
           '/assets/images/products/19/image5.jpg',
         ],
       },
-
+      {
+        id: 20,
+        image:
+          '/assets/images/products/20/main.jpg',
+        type: 'Acapulco Rombo',
+        number_decor: 'MLDSP-K-0005',
+        decor_type: 'Имитация камня',
+        description: '',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          '/assets/images/products/20/image1.jpg',
+        ],
+      },
+      {
+        id: 21,
+        image:
+          '/assets/images/products/21/main.jpg',
+        type: 'Acapulco Rombo',
+        number_decor: 'MLDSP-K-0006',
+        decor_type: 'Имитация камня',
+        description: '',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          '/assets/images/products/21/image1.jpg',
+          '/assets/images/products/21/image2.jpg',
+          '/assets/images/products/21/image3.jpg',
+        ],
+      },
+      {
+        id: 22,
+        image:
+          '/assets/images/products/22/main.jpg',
+        type: 'Acapulco Rombo',
+        number_decor: 'MLDSP-K-0007',
+        decor_type: 'Имитация камня',
+        description: '',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          '/assets/images/products/22/image1.jpg',
+        ],
+      },
+      {
+        id: 23,
+        image:
+          '/assets/images/products/23/main.jpg',
+        type: 'Acapulco Rombo',
+        number_decor: 'MLDSP-T-0001',
+        decor_type: 'Древесный декор',
+        description: '',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          '/assets/images/products/23/main.jpg',
+        ],
+      },
+      {
+        id: 24,
+        image:
+          '/assets/images/products/24/main.jpg',
+        type: 'Acapulco Rombo',
+        number_decor: 'MLDSP-T-0002',
+        decor_type: 'Древесный декор',
+        description: '',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          '/assets/images/products/24/image1.jpg',
+          '/assets/images/products/24/image2.jpg',
+          '/assets/images/products/24/image3.jpg',
+          '/assets/images/products/24/image4.jpg',
+        ],
+      },
+      {
+        id: 25,
+        image:
+          '/assets/images/products/25/main.jpg',
+        type: 'Acapulco Rombo',
+        number_decor: 'MLDSP-T-0003',
+        decor_type: 'Древесный декор',
+        description: '',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          '/assets/images/products/25/image1.jpg',
+          '/assets/images/products/25/image2.jpg',
+          '/assets/images/products/25/image3.jpg',
+          '/assets/images/products/25/image4.jpg',
+        ],
+      },
+      {
+        id: 26,
+        image:
+          '/assets/images/products/26/main.jpg',
+        type: 'Acapulco Rombo',
+        number_decor: 'MLDSP-T-0004',
+        decor_type: 'Древесный декор',
+        description: '',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          '/assets/images/products/26/image1.jpg',
+          '/assets/images/products/26/image2.jpg',
+          '/assets/images/products/26/image3.jpg',
+        ],
+      },
+      {
+        id: 27,
+        image:
+          '/assets/images/products/27/main.jpg',
+        type: 'Acapulco Rombo',
+        number_decor: 'MLDSP-T-0005',
+        decor_type: 'Древесный декор',
+        description: '',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          '/assets/images/products/27/image1.jpg',
+          '/assets/images/products/27/image2.jpg',
+          '/assets/images/products/27/image3.jpg',
+          '/assets/images/products/27/image4.jpg',
+        ],
+      },
+      {
+        id: 28,
+        image:
+          '/assets/images/products/28/main.jpg',
+        type: 'Acapulco Rombo',
+        number_decor: 'MLDSP-T-0006',
+        decor_type: 'Древесный декор',
+        description: '',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          '/assets/images/products/28/image1.jpg',
+          '/assets/images/products/28/image2.jpg',
+          '/assets/images/products/28/image3.jpg',
+          '/assets/images/products/28/image4.jpg',
+        ],
+      },
+      {
+        id: 29,
+        image:
+          '/assets/images/products/29/main.jpg',
+        type: 'Acapulco Rombo',
+        number_decor: 'MLDSP-T-0007',
+        decor_type: 'Древесный декор',
+        description: '',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          '/assets/images/products/29/image1.jpg',
+          '/assets/images/products/29/image2.jpg',
+          '/assets/images/products/29/image3.jpg',
+        ],
+      },
+      {
+        id: 30,
+        image:
+          '/assets/images/products/30/main.jpg',
+        type: 'Acapulco Rombo',
+        number_decor: 'MLDSP-T-0008',
+        decor_type: 'Древесный декор',
+        description: '',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          '/assets/images/products/30/image1.jpg',
+          '/assets/images/products/30/image2.jpg',
+          '/assets/images/products/30/image3.jpg',
+          '/assets/images/products/30/image4.jpg',
+        ],
+      },
+      {
+        id: 31,
+        image:
+          '/assets/images/products/31/main.jpg',
+        type: 'Acapulco Rombo',
+        number_decor: 'MLDSP-T-0008',
+        decor_type: 'Древесный декор',
+        description: '',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          '/assets/images/products/31/image1.jpg',
+          '/assets/images/products/31/image2.jpg',
+          '/assets/images/products/31/image3.jpg',
+          '/assets/images/products/31/image4.jpg',
+        ],
+      },
+      {
+        id: 32,
+        image:
+          '/assets/images/products/32/main.jpg',
+        type: 'Acapulco Rombo',
+        number_decor: 'MLDSP-T-0008',
+        decor_type: 'Древесный декор',
+        description: '',
+        size: '750 x 1300 mm',
+        where_to_use: 'Мебель',
+        other_images: [
+          '/assets/images/products/32/image1.jpg',
+          '/assets/images/products/32/image2.jpg',
+          '/assets/images/products/32/image3.jpg',
+        ],
+      },
     ];
     this.dataArraySubject.next(this.productCatalog);  
     this.displayDataSubject.next(this.productCatalog);

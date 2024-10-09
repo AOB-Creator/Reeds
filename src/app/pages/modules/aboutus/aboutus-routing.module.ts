@@ -6,7 +6,7 @@ const routes: Routes = [
   {
     path: 'about-us',
     component: AboutusComponent,
-    title: 'AboutUS'
+    title: 'О нас'
   }
 ];
 

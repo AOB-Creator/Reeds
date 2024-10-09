@@ -14,28 +14,33 @@ const routes: Routes = [
   },
   {
     path: '',
-    loadChildren: ()=>import('./pages/modules/aboutus/aboutus.module').then((m)=>m.AboutusModule)
+    loadChildren: ()=>import('./pages/modules/aboutus/aboutus.module').then((m)=>m.AboutusModule),
+    title: 'Moynak LDSP'
   },
   {
     path: '',
-    loadChildren: ()=>import('./pages/modules/decoration/decoration.module').then((d)=>d.DecorationModule)
+    loadChildren: ()=>import('./pages/modules/decoration/decoration.module').then((d)=>d.DecorationModule),
+    title: 'Moynak LDSP'
   },
   {
     path: '',
-    loadChildren: ()=>import('./pages/modules/products/products.module').then((p)=>p.ProductsModule)
+    loadChildren: ()=>import('./pages/modules/products/products.module').then((p)=>p.ProductsModule),
+    title: 'Moynak LDSP'
   },
   {
     path: '',
-    loadChildren: ()=>import('./pages/modules/reference/reference.module').then((r)=> r.ReferenceModule)
+    loadChildren: ()=>import('./pages/modules/reference/reference.module').then((r)=> r.ReferenceModule),
+    title: 'Moynak LDSP'
   },
   {
     path: 'tourism-development-in-moynak',
-    loadChildren: ()=> import('./pages/modules/tourism/tourism.module').then((m) => m.TourismModule)
+    loadChildren: ()=> import('./pages/modules/tourism/tourism.module').then((m) => m.TourismModule),
+    title: 'Moynak LDSP'
   },
   {
     path: '',
     loadChildren: ()=>import('./pages/modules/careers/careers.module').then((c) => c.CareersModule),
-    title: 'Career with us'
+    title: 'Карьера'
   },
   {
     path: '',

@@ -68,6 +68,8 @@ import { MainSliderComponent } from './components/main-slider/main-slider.compon
 import { FormsModule } from '@angular/forms';
 import { HereToHelpComponent } from './components/here-to-help/here-to-help.component';
 import { SupportComponent } from './components/support/support.component';
+import { GetintouchComponent } from './components/getintouch/getintouch.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -127,7 +129,8 @@ import { SupportComponent } from './components/support/support.component';
     MatrixComponent,
     MainSliderComponent,
     HereToHelpComponent,
-    SupportComponent
+    SupportComponent,
+    GetintouchComponent
   ],
   imports: [
     BrowserModule,

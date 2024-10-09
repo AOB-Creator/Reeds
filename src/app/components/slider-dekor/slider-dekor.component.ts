@@ -15,170 +15,67 @@ export class SliderDekorComponent implements OnInit{
     this.products = [
       {
         id: 1,
+        imageshow: '../../../assets/images/showroom/kitchen-1.jpg',
         types: [
          {
-          image: "https://www.schattdecor.com/media/_processed_/c/b/csm_4000398-07-000_5fd0a651fc.jpg",
-          id: "4000398-07-000",
-          type_decor: "Fern"
+          image: "/assets/images/products/20/main.jpg",
+          id: "MLDSP-K-0005",
+          type_decor: "K-0005"
          },
          {
-          image: "https://www.schattdecor.com/media/_processed_/5/7/csm_14-11069-001_875e51af19.jpg",
-          id: "14-11069-001",
-          type_decor: "Brighton"
+          image: "/assets/images/products/21/main.jpg",
+          id: "MLDSP-K-0006",
+          type_decor: "K-0006"
          }
         ]
       },
       {
         id: 2,
+        imageshow: '../../../assets/images/showroom/kitchen-2.jpg',
         types: [
           {
-            image: "https://www.schattdecor.com/media/_processed_/f/5/csm_14-54246-001_3a51486edb.jpg",
-            id: "14-54246-001",
-            type_decor: "Atlantic Coast"
+            image: "/assets/images/products/14/main.jpg",
+            id: "MLDSP-M-0008",
+            type_decor: "M-0008"
           },
           {
-            image: "https://www.schattdecor.com/media/_processed_/e/5/csm_14-54152-001_613211a36a.jpg",
-            id: "4000531-01-000",
-            type_decor: "Barcelona"
-          },
-          {
-           image: "https://www.schattdecor.com/media/_processed_/5/7/csm_14-11069-001_875e51af19.jpg",
-           id: "14-11069-001",
-           type_decor: "Brighton"
-          },
-         
-          
-         ]
+            image: "/assets/images/products/2/main.jpg",
+            id: "MLDSP-S-0002",
+            type_decor: "S-0002"
+          }
+        ]
       },
       {
         id: 3,
+        imageshow: '../../../assets/images/showroom/kitchen-3.jpg',
         types: [
           {
-           image: "https://www.schattdecor.com/media/_processed_/e/e/csm_14-54191-001_183ef7ecce.jpg",
-           id: "4000531-01-000",
-           type_decor: "Belize"
+            image: "/assets/images/products/2/main.jpg",
+            id: "MLDSP-S-0002",
+            type_decor: "S-0002"
           },
           {
-           image: "https://www.schattdecor.com/media/_processed_/e/5/csm_14-54152-001_613211a36a.jpg",
-           id: "4000531-01-000",
-           type_decor: "Adalar"
-          },
-          {
-            image: "https://www.schattdecor.com/media/_processed_/e/e/csm_14-54191-001_183ef7ecce.jpg",
-            id: "4000531-01-000",
-            type_decor: "Belize"
-           },
-           {
-            image: "https://www.schattdecor.com/media/_processed_/7/1/csm_4000330-21-000_7cf50fe046.jpg",
-            id: "4000531-01-000",
-            type_decor: "Borneo Mango"
-           },
-         ]
+            image: "/assets/images/products/14/main.jpg",
+            id: "MLDSP-M-0008",
+            type_decor: "M-0008"
+          }
+        ]
       },
       {
         id: 4,
+        imageshow: '../../../assets/images/showroom/kitchen-7.jpg',
         types: [
           {
-            image: "https://www.schattdecor.com/media/_processed_/e/e/csm_14-54191-001_183ef7ecce.jpg",
-            id: "4000531-01-000",
-            type_decor: "Belize"
-           },
-           {
-            image: "https://www.schattdecor.com/media/_processed_/e/5/csm_14-54152-001_613211a36a.jpg",
-            id: "4000531-01-000",
-            type_decor: "Adalar"
-           },
-         ]
-      },
-      {
-        id: 5,
-        types: [
-          {
-           image: "https://www.schattdecor.com/media/_processed_/e/e/csm_14-54191-001_183ef7ecce.jpg",
-           id: "4000531-01-000",
-           type_decor: "Belize"
+            image: "/assets/images/products/2/main.jpg",
+            id: "MLDSP-S-0002",
+            type_decor: "S-0002"
           },
           {
-           image: "https://www.schattdecor.com/media/_processed_/e/5/csm_14-54152-001_613211a36a.jpg",
-           id: "4000531-01-000",
-           type_decor: "Barcelona"
+            image: "/assets/images/products/14/main.jpg",
+            id: "MLDSP-M-0008",
+            type_decor: "M-0008"
           }
-         ]
-      },
-      {
-        id: 6,
-        types: [
-          {
-           image: "https://www.schattdecor.com/media/_processed_/e/e/csm_14-54191-001_183ef7ecce.jpg",
-           id: "4000531-01-000",
-           type_decor: "Belize"
-          },
-          {
-           image: "https://www.schattdecor.com/media/_processed_/e/5/csm_14-54152-001_613211a36a.jpg",
-           id: "4000531-01-000",
-           type_decor: "Artemis"
-          }
-         ]
-      },
-      {
-        id: 7,
-        types: [
-          {
-           image: "https://www.schattdecor.com/media/_processed_/e/e/csm_14-54191-001_183ef7ecce.jpg",
-           id: "4000531-01-000",
-           type_decor: "Belize"
-          },
-          {
-           image: "https://www.schattdecor.com/media/_processed_/e/5/csm_14-54152-001_613211a36a.jpg",
-           id: "4000531-01-000",
-           type_decor: "Borneo Mango"
-          },
-          {
-            image: "https://www.schattdecor.com/media/_processed_/e/5/csm_14-54152-001_613211a36a.jpg",
-            id: "4000531-01-000",
-            type_decor: "Artemis"
-           }
-         ]
-      },
-      {
-        id: 8,
-        types: [
-          {
-           image: "https://www.schattdecor.com/media/_processed_/e/e/csm_14-54191-001_183ef7ecce.jpg",
-           id: "4000531-01-000",
-           type_decor: "Belize"
-          },
-          {
-           image: "https://www.schattdecor.com/media/_processed_/e/5/csm_14-54152-001_613211a36a.jpg",
-           id: "4000531-01-000",
-           type_decor: "Artemis"
-          },
-          {
-            image: "https://www.schattdecor.com/media/_processed_/e/5/csm_14-54152-001_613211a36a.jpg",
-            id: "4000531-01-000",
-            type_decor: "Artemis"
-           }
-         ]
-      },
-      {
-        id: 9,
-        types: [
-          {
-           image: "https://www.schattdecor.com/media/_processed_/e/e/csm_14-54191-001_183ef7ecce.jpg",
-           id: "4000531-01-000",
-           type_decor: "Belize"
-          },
-          {
-           image: "https://www.schattdecor.com/media/_processed_/e/5/csm_14-54152-001_613211a36a.jpg",
-           id: "4000531-01-000",
-           type_decor: "Artemis"
-          },
-          {
-            image: "https://www.schattdecor.com/media/_processed_/e/5/csm_14-54152-001_613211a36a.jpg",
-            id: "4000531-01-000",
-            type_decor: "Artemis"
-           }
-         ]
+        ]
       },
      
     ]

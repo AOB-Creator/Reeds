@@ -6,6 +6,7 @@ const routes: Routes = [
   {
     path: 'careers-with-us',
     component: CareersComponent,
+    title: 'Карьера',
     children: [],
   },
 ];
